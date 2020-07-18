@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on T. S. Grigera</title>
+    <link>https://tgrigera.github.io/tags/</link>
+    <description>Recent content in Tags on T. S. Grigera</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; T. S. Grigera {year}</copyright>
+    <lastBuildDate>Sat, 18 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://tgrigera.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>web</title>
+      <link>https://tgrigera.github.io/tags/web/</link>
+      <pubDate>Sat, 18 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>https://tgrigera.github.io/tags/debian/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Emacs</title>
+      <link>https://tgrigera.github.io/tags/emacs/</link>
+      <pubDate>Wed, 23 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://tgrigera.github.io/tags/linux/</link>
+      <pubDate>Thu, 30 Jul 2015 20:16:50 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LaTeX</title>
+      <link>https://tgrigera.github.io/tags/latex/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/tags/latex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graphics</title>
+      <link>https://tgrigera.github.io/tags/graphics/</link>
+      <pubDate>Sat, 17 Oct 2009 20:02:06 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/tags/graphics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

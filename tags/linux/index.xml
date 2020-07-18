@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on T. S. Grigera</title>
+    <link>https://tgrigera.github.io/tags/linux/</link>
+    <description>Recent content in Linux on T. S. Grigera</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; T. S. Grigera {year}</copyright>
+    <lastBuildDate>Thu, 30 Jul 2015 20:16:50 +0000</lastBuildDate>
+    
+	    <atom:link href="https://tgrigera.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Identifying disks by UUID</title>
+      <link>https://tgrigera.github.io/post/identifying-disks-by-uuid/</link>
+      <pubDate>Thu, 30 Jul 2015 20:16:50 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/post/identifying-disks-by-uuid/</guid>
+      <description>&lt;p&gt;
+To get a the UUID of a disk, do
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+$ sudo blkid /dev/sdb1
+/dev/sdb1: UUID=&amp;#34;a48cf280-fcc7-4283-ab31-5a23440bd2fa&amp;#34; TYPE=&amp;#34;ext4&amp;#34; 
+&lt;/pre&gt;
+&lt;p&gt;
+Now you can refer to the device as &lt;code&gt;/dev/disk-by-uuid/xxx&lt;/code&gt;.  Or you
+can mount by UUID from fstab as follows:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+UUID=a48cf280-fcc7-4283-ab31-5a23440bd2fa /external	ext4	rw,user,noauto
+&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Burning mixed CDs</title>
+      <link>https://tgrigera.github.io/post/burning-mixed-cds/burning-mixed-cds/</link>
+      <pubDate>Thu, 10 Dec 2009 19:19:26 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/post/burning-mixed-cds/burning-mixed-cds/</guid>
+      <description>&lt;p&gt;
+There are two ways to mix audio and data on a CD. The first is to use
+a single session, using the first track for data and the rest for
+audio (this works because most CD players will ignore the data
+track). The command (Debian) is something like
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+wodim -v dev=/dev/cdrom -data cdimage.raw -audio track*.cdaudio
+&lt;/pre&gt;
+&lt;p&gt;
+The second option is the best according to advice I’ve found, and the
+only I’ve actually tried. It’s to burn a two-session CD, puting audio
+in the first session and data in the second. This second session is
+ignored by players, but can be read by a computer when you mount the
+CD.
+&lt;/p&gt;
+&lt;p&gt;
+This is how you do it: First, burn the audio:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+wodim -v dev=/dev/cdrom [-sao] -multi -audio  *.wav
+&lt;/pre&gt;
+&lt;p&gt;
+(-v = verbose, -sao = session-at-once). Now find and save the number
+of the last record written:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+NEXT_TRACK=$(cdrecord -msinfo)
+&lt;/pre&gt;
+&lt;p&gt;
+Create the image:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+genisoimage -o image.iso -r -J -C $NEXT_TRACK cd-data/*
+&lt;/pre&gt;
+&lt;p&gt;
+(-J = Joliet, -r = intelligent Rock Ridge, -C = starting sector). To
+verify the image:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+isoinfo -i cd_plus.iso -f -R -J -N ${NEXT_TRACK/*,}
+&lt;/pre&gt;
+&lt;p&gt;
+Finally, burn the second session:
+&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+wodim dev=/dev/cdrom -eject -data cd_plus.iso
+&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Converting among graphic formats</title>
+      <link>https://tgrigera.github.io/post/converting-graphic-formats/</link>
+      <pubDate>Sat, 17 Oct 2009 20:02:06 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/post/converting-graphic-formats/</guid>
+      <description>
+&lt;p&gt;
+Command-line utilities to convert between graphic formats I have found useful:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+eps to pdf: ps2pdf with -dEPSCrop option to produce the pdf
+“bounding box”
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+epstopdf (part of texlive package). Seems better than the above,
+automatically uses bounding box and respects orientation.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+convert is a command-line tool to convert among various
+formats. Very easy basic usage (assumes target format from file
+extension). Part of ImageMagic.
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+pdftk is a tool to manipulate pdf files (split, join and much
+more).
+&lt;/p&gt;
+&lt;h3 id=&#34;headline-1&#34;&gt;
+Extracting images from MSWord documents
+&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+The best way is to save the document as web page (from the File menu)
+and look in the directory for the image files.
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

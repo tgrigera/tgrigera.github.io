@@ -1,0 +1,3 @@
+Éste es un texto Unicode.
+¡Admite acentos!
+¿Qué piensas de ello, niño?

@@ -1,0 +1,2 @@
+Esto es texto ASCII.
+En dos lineas.

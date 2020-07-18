@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/docencia/</loc>
+    <lastmod>2020-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/docencia/docencia/</loc>
+    <lastmod>2020-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/talk/</loc>
+    <lastmod>2020-07-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/</loc>
+    <lastmod>2020-07-17T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://tgrigera.github.io/es/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/docencia/simulaciones/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/docencia/mecanicaclasica/</loc>
+    <lastmod>2017-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/post/</loc>
+    <lastmod>2017-03-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://tgrigera.github.io/es/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/tags/energia/</loc>
+    <lastmod>2017-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/post/precio-gas-electricidad/</loc>
+    <lastmod>2017-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/tags/</loc>
+    <lastmod>2017-03-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://tgrigera.github.io/es/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/docencia/fisicagrali/</loc>
+    <lastmod>2016-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/docencia/computacion/</loc>
+    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/authors/admin/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/authors/admin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://tgrigera.github.io/es/authors/admin/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/home/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/home/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://tgrigera.github.io/es/home/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/authors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://tgrigera.github.io/es/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/es/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://tgrigera.github.io/es/categories/"
+                />
+  </url>
+  
+</urlset>
