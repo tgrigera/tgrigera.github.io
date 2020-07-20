@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Debian on T. S. Grigera</title>
+    <link>https://tgrigera.github.io/en/tags/debian/</link>
+    <description>Recent content in Debian on T. S. Grigera</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; T. S. Grigera {year}</copyright>
+    <lastBuildDate>Fri, 15 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://tgrigera.github.io/en/tags/debian/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installing Debian GNU/Linux on the Lenovo V510</title>
+      <link>https://tgrigera.github.io/en/post/debian-on-lenovo-v510/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/en/post/debian-on-lenovo-v510/</guid>
+      <description>
+&lt;p&gt;
+I have recently installed Debian GNU/Linux on a Lenovo V510.  It got
+working almost out of the box (I explain below what needed fixing),
+and everything seems to be running now.  I experienced random freezing
+of the machine at first, but the issue seems to be solved (see
+below).&lt;/p&gt;
+&lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-1&#34;&gt;
+Installation
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+I did a net install of Debian 9.1 (stretch).  In the BIOS screen I
+turned off secure boot and set boot mode to UEFI (no BIOS
+compatibility).  I booted the installer from a CD.  The installer did
+not recognise the wireless LAN, so I had to use the wired Ethernet
+port.  The installer complained about missing firmware but it could
+connect to the repositories and complete the installation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-2&#34;&gt;
+Missing firmware
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-2&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+The needed firmware can be downloaded with &lt;code class=&#34;verbatim&#34;&gt;aptitude&lt;/code&gt; or &lt;code class=&#34;verbatim&#34;&gt;apt-get&lt;/code&gt;
+after first booting into the new system (you need to add the &lt;code&gt;nonfree&lt;/code&gt;
+section of the repositories).  The needed packages are
+&lt;code class=&#34;verbatim&#34;&gt;firmware-amd-graphics&lt;/code&gt;, &lt;code class=&#34;verbatim&#34;&gt;firmware-iwlwifi&lt;/code&gt;, and &lt;code class=&#34;verbatim&#34;&gt;firmware-realtek&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-3&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-3&#34;&gt;
+Wireless LAN
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-3&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+After getting the firmware and rebooting, the firmware for the
+graphics card and the Ethernet card was found and loaded.  The kernel
+still complained about missing firmware for the WIFI card, but it
+found and loaded an earlier version which works just fine.  Now the
+card was found&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+$ ip address
+wlp3s0: &amp;lt;BROADCAST,MULTICAST,UP,LOWER_UP&amp;gt; mtu 1500 qdisc mq state UP group default qlen 1000
+   link/ether 98:54:1b:76:36:3f brd ff:ff:ff:ff:ff:ff
+&lt;/pre&gt;
+&lt;p&gt;but it did not work.  The culprit (after some googling) turned out to
+be the &lt;code class=&#34;verbatim&#34;&gt;ideapad_laptop&lt;/code&gt; module, which must be removed. I added the
+line&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+blacklist ideapad_laptop
+&lt;/pre&gt;
+&lt;p&gt;to &lt;code class=&#34;verbatim&#34;&gt;/etc/modprobe.d/blacklist.conf&lt;/code&gt; and after rebooting the WIFI
+started working&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-4&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-4&#34;&gt;
+Bluetooth, sound, camera, SD card reader
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-4&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+All these worked out of the box.  I haven&amp;#39;t fully tested Bluetooth,
+but it did find and connect to my phone.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-5&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-5&#34;&gt;
+Fingerprint reader
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-5&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+Install &lt;code class=&#34;verbatim&#34;&gt;dirmngr&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+sudo apt-get install dirmngr
+&lt;/pre&gt;
+&lt;p&gt;
+then follow the instructions at &lt;a href=&#34;https://launchpad.net/~fingerprint/+archive/ubuntu/fingerprint-gui&#34;&gt;launchpad.net&lt;/a&gt;.  The device worked but
+I cannot use it to log in with &lt;code class=&#34;verbatim&#34;&gt;gdm&lt;/code&gt; (it works for &lt;code class=&#34;verbatim&#34;&gt;sudo&lt;/code&gt;, which is
+not particularly useful).  There is likely a configuration problem
+related to &lt;code class=&#34;verbatim&#34;&gt;pam&lt;/code&gt; which I could not fix, and do not have the time to
+dig into this.  But the hardware is working, and maybe you have better
+luck with Ubuntu (the fingerprint packages are actually made for
+Ubuntu, not Debian).&lt;/p&gt;
+&lt;p&gt;
+To uninstall fingerprint, remember to reinstall the appropriate
+policykit, in my case for Gnome:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+sudo apt-get install policykit-1-gnome
+sudo apt-get remove fingerprint-gui
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;outline-container-headline-6&#34; class=&#34;outline-3&#34;&gt;
+&lt;h3 id=&#34;headline-6&#34;&gt;
+Freezing issue
+&lt;/h3&gt;
+&lt;div id=&#34;outline-text-headline-6&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+After I got the machine up, I experienced several instance of complete
+freezing (screen, keyboard, mouse) of the machine, which required
+poweroff/poweron to recover.  It happened while reading PDFs with
+&lt;code class=&#34;verbatim&#34;&gt;evince&lt;/code&gt;, apparently while trying to scroll the document.  It also
+happened once during a video call.&lt;/p&gt;
+&lt;p&gt;
+Googling, I found several people reporting this issue, and several
+culprits and solutions suggested.  Given the circumstances under which
+it happened, I suspected video card or driver problems, and I found in
+the ArchLinux wiki a reference to problems with the driver for the
+Intel graphic card.  The wiki suggested disabling the 3D hardware
+acceleration as a workaround, which I did following their
+instructions.  I created the file &lt;code class=&#34;verbatim&#34;&gt;/etc/X11/xorg.conf.d/20-intel.conf&lt;/code&gt;
+with the following content and rebooted:&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+Section &amp;#34;Device&amp;#34;
+
+  Identifier &amp;#34;Intel Graphics&amp;#34;
+  Driver     &amp;#34;intel&amp;#34;
+
+  Option &amp;#34;DRI&amp;#34; &amp;#34;False&amp;#34;
+
+EndSection
+&lt;/pre&gt;
+&lt;p&gt;The freezing has not occurred again since this configuration change.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

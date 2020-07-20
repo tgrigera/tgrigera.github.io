@@ -3,149 +3,149 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tgrigera.github.io/es/docencia/</loc>
+    <loc>https://tgrigera.github.io/docencia/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/docencia/docencia/</loc>
+    <loc>https://tgrigera.github.io/docencia/docencia/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/talk/</loc>
+    <loc>https://tgrigera.github.io/talk/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/</loc>
+    <loc>https://tgrigera.github.io/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tgrigera.github.io/"
+                href="https://tgrigera.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/"
+                href="https://tgrigera.github.io/"
                 />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/docencia/simulaciones/</loc>
+    <loc>https://tgrigera.github.io/docencia/simulaciones/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/docencia/mecanicaclasica/</loc>
+    <loc>https://tgrigera.github.io/docencia/mecanicaclasica/</loc>
     <lastmod>2017-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/post/</loc>
+    <loc>https://tgrigera.github.io/post/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://tgrigera.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
                 href="https://tgrigera.github.io/post/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://tgrigera.github.io/es/post/"
-                />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/tags/energia/</loc>
+    <loc>https://tgrigera.github.io/tags/energia/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/post/precio-gas-electricidad/</loc>
+    <loc>https://tgrigera.github.io/post/precio-gas-electricidad/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/tags/</loc>
+    <loc>https://tgrigera.github.io/tags/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tgrigera.github.io/tags/"
+                href="https://tgrigera.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/tags/"
+                href="https://tgrigera.github.io/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/docencia/fisicagrali/</loc>
+    <loc>https://tgrigera.github.io/docencia/fisicagrali/</loc>
     <lastmod>2016-03-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/docencia/computacion/</loc>
+    <loc>https://tgrigera.github.io/docencia/computacion/</loc>
     <lastmod>2015-08-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/authors/admin/</loc>
+    <loc>https://tgrigera.github.io/authors/admin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tgrigera.github.io/authors/admin/"
+                href="https://tgrigera.github.io/en/authors/admin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/authors/admin/"
+                href="https://tgrigera.github.io/authors/admin/"
                 />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/home/</loc>
+    <loc>https://tgrigera.github.io/home/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://tgrigera.github.io/en/home/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
                 href="https://tgrigera.github.io/home/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://tgrigera.github.io/es/home/"
-                />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/authors/</loc>
+    <loc>https://tgrigera.github.io/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://tgrigera.github.io/en/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
                 href="https://tgrigera.github.io/authors/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://tgrigera.github.io/es/authors/"
-                />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/es/categories/</loc>
+    <loc>https://tgrigera.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tgrigera.github.io/categories/"
+                href="https://tgrigera.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/categories/"
+                href="https://tgrigera.github.io/categories/"
                 />
   </url>
   

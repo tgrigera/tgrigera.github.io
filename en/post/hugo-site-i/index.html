@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academia 4.3.1">
+  <meta name="generator" content="Hugo 0.74.2" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Tomás S. Grigera">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Until recently I built my personal webpage with Nikola (see this post). However I decided to change that when moving to GitHub pages, in part because I thought Jekyll would be easier to use on GitHub, in part because after a Nikola upgrade the theme I was using broke and didn&#39;t know how to fix it. The problem is probably ignorance on my part more than anything else. I am no expert on web publishing and can&#39;t afford to become one, I just need to put up a decent website (and I hate CMSs).">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://tgrigera.github.io/en/post/hugo-site-i/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#fc6f5c">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academia.min.1cb3ac49332c2574347cb83174f02db0.css">
+
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://tgrigera.github.io/en/post/hugo-site-i/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@grigeratomas">
+  <meta property="twitter:creator" content="@grigeratomas">
+  
+  <meta property="og:site_name" content="T. S. Grigera">
+  <meta property="og:url" content="https://tgrigera.github.io/en/post/hugo-site-i/">
+  <meta property="og:title" content="Creating a personal website with Hugo | T. S. Grigera">
+  <meta property="og:description" content="Until recently I built my personal webpage with Nikola (see this post). However I decided to change that when moving to GitHub pages, in part because I thought Jekyll would be easier to use on GitHub, in part because after a Nikola upgrade the theme I was using broke and didn&#39;t know how to fix it. The problem is probably ignorance on my part more than anything else. I am no expert on web publishing and can&#39;t afford to become one, I just need to put up a decent website (and I hate CMSs)."><meta property="og:image" content="https://tgrigera.github.io/img/icon-192.png">
+  <meta property="twitter:image" content="https://tgrigera.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-07-18T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2020-07-18T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Creating a personal website with Hugo | T. S. Grigera</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/en/">T. S. Grigera</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#first"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/teaching/"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/en/post/"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/en/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article py-5" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+    
+    
+    <div class="article-container py-3">
+      <h1 itemprop="name">Creating a personal website with Hugo</h1>
+
+      
+
+      
+      
+
+
+
+<meta content="2020-07-18 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-07-18 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Jul 18, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    12 min read
+  </span>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/en/post/hugo-site-i/#disqus_thread"></a>
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://tgrigera.github.io/en/post/hugo-site-i/&amp;text=Creating%20a%20personal%20website%20with%20Hugo" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://tgrigera.github.io/en/post/hugo-site-i/&amp;t=Creating%20a%20personal%20website%20with%20Hugo" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Creating%20a%20personal%20website%20with%20Hugo&amp;body=https://tgrigera.github.io/en/post/hugo-site-i/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://tgrigera.github.io/en/post/hugo-site-i/&amp;title=Creating%20a%20personal%20website%20with%20Hugo" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Creating%20a%20personal%20website%20with%20Hugo%20https://tgrigera.github.io/en/post/hugo-site-i/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://tgrigera.github.io/en/post/hugo-site-i/&amp;title=Creating%20a%20personal%20website%20with%20Hugo" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+    </div>
+  </div>
+</div>
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+<p>
+Until recently I built my personal webpage with <a href="https://getnikola.com">Nikola</a> (see
+<a href="/post/how-i-created-my-homepage/">this post</a>).  However I decided to change that when moving to GitHub
+pages, in part because I thought <a href="https://jekyllrb.com/">Jekyll</a> would be easier to use on
+GitHub, in part because after a Nikola upgrade the theme I was using
+broke and didn&#39;t know how to fix it.  The problem is probably
+ignorance on my part more than anything else.  I am no expert on web
+publishing and can&#39;t afford to become one, I just need to put up a
+decent website (and I hate CMSs).</p>
+<p>
+However, reading Jekyll documentation scared me a bit, and a dear
+<a href="http://manuxch.github.io">colleague</a> pointed me to <a href="https://gohugo.io/">Hugo</a>.  I followed his suggestion, and I
+managed to set up a rather nice, if not perfect, website.  Now that
+it&#39;s done, it seems I have a setup where I can easily enough create
+and update content in a bunch of plain text files (stored in GitHub),
+quickly create a site and publish it through GitHub pages.  However,
+I&#39;d lie if I said setting it up was a breeze.  I am certainly no web
+expert, but I have been around computers for a while (my first
+encounter with them was through my father&#39;s TRS-80 Model I), and this
+is not my first time with a static web site generator.  Yet I had a
+hard time at first.</p>
+<p>
+So I decided to write this summary of my experience and what I gather
+about how Hugo works.  It will serve mainly for my own reference, but
+it might also be useful to others, so I publish it here.  When the
+Hugo docs failed me (which at first was very often), I found much help
+in <a href="https://www.sarasoueidan.com/blog/jekyll-ghpages-to-hugo-netlify/">this post</a> from <a href="https://www.sarasoueidan.com">Sara Souiedan&#39;s</a> blog, and in <a href="https://jpdroege.com/blog/hugo-file-organization/">this one</a> by
+<a href="https://jpdroege.com/">J. P. Droege</a>.</p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Understanding Hugo
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+My main problem with Hugo is documentation.  Not the not lack of
+documentation: there is plenty of it.  However, it seems designed to
+explain Hugo a detail at a time, and there is no &#34;high-level&#34; or
+big-picture summary of how Hugo works, and how a source directory
+structure is turned into a web site.  There are also very detailed
+guides to install and work with a particular theme.  In fact I started
+with one of those, which is fine if you plan to use the theme exactly
+as it comes.  However, as soon as I wanted to tweak a minor detail, I
+stumbled due to lack of understanding of how Hugo interprets your
+source.  What follows is what I eventually gathered, from the
+mentioned blog posts, the docs, and a lot of trial and error.</p>
+<p>
+This is not intended as a guide to use Hugo to build a complete web
+site from scratch.  I don&#39;t know enough to do that, and I am using a
+theme, which fills in the CSSs and other stuff needed to get a
+nice-looking site.  I am just trying to get enough understanding of
+Hugo&#39;s workings to be able to do good use of a theme (note again that
+I&#39;m not an expert and I could be wrong in what I say, and that I will
+be happy to stand corrected if someone with more knowledge cares to
+leave a comment).</p>
+<p>
+After installing Hugo (I did so through my Linux distro package
+manager), one creates a bare working tree (starting at, say,
+<code class="verbatim">./test/</code>) with the directory structure Hugo expects with</p>
+<pre class="example">
+hugo new site test
+cd test
+</pre>
+<p>
+Essentially, Hugo will create a site in the <code class="verbatim">public/</code> directory by
+applying a series of transformations to the content of the <code class="verbatim">content/</code>
+directory.  These transformations involve various things I don&#39;t
+understand completely, but basically Hugo reads your content from a
+source tree starting at <code class="verbatim">content/</code>, plus a set of templates (which you
+write or get as part of a theme) and a set of data (defined in the
+header of the source file themselves or in various configuration
+files) and writes <code class="verbatim">.html</code> files to <code class="verbatim">pulibc/</code>.  Additional files needed
+for the site (like images and <code class="verbatim">.css</code>) are copied as-is from the
+<code class="verbatim">static/</code> directory.  The templates (though Hugo does not call them
+that, but layouts or archetypes) and other stuff that formats your
+content (and in principle does not change as often) are in
+<code class="verbatim">archetypes/</code> and <code class="verbatim">layouts/</code>.</p>
+<p>
+The site is created when you invoke <code class="verbatim">hugo</code> on the root of your source
+site.  To draft and debug the site, you can call <code class="verbatim">hugo serve</code> and your
+site is served locally, and automatically updated upon any source tree
+change (and very fast).  This is a great feature.</p>
+<p>
+Source files are normally written in some markup language that makes
+your life easy.  Markdown (<code class="verbatim">.md</code>) seems to be the standard for
+Hugo. I&#39;m a fan of <a href="https://www.gnu.org/software/emacs/emacs.html">Emacs</a> and <a href="http://orgmode.org">Orgmode</a>, and luckily Hugo supports that
+too, probably along with others I know nothing about (<code>orgmode</code> users
+may find better to use <a href="https://ox-hugo.scripter.co/">ox-hugo</a>, which exports <code>orgmode</code> to
+Hugo-tailored Markdown, but I&#39;m not doing this so far).  These source
+files typically start with a header (&#34;front matter&#34;) that defines
+variables (aka metadata) that help Hugo decide how to process the file
+and supply information like date or title for the page.  This header
+basically consists in key, value pairs and is written in <code class="verbatim">toml</code>,
+<code class="verbatim">yaml</code>, <code class="verbatim">json</code> (like the configuration files).  I don&#39;t really know
+any of these, but I use <code class="verbatim">toml</code> which is quite intuitive and easy to
+pick up from the examples.  In the case of <code class="verbatim">.org</code> files, it is also
+possible to use a syntax similar to <code>org</code> properties.</p>
+<p>
+In principle, every file in <code class="verbatim">content/</code> becomes a page, but I do not
+understand all the rules about the process.  What I can say is that
+<code class="verbatim">content/_index.md</code> (or <code class="verbatim">content/_index.org</code>, in all cases I&#39;ve tried,
+<code class="verbatim">.org</code> files work just as well as <code class="verbatim">.md</code> files, I will not mention this
+equivalence again) produces your home, or landing, page.  But for this
+to happen, Hugo needs an appropriate template (or layout) file in
+<code class="verbatim">layouts/</code>.  For the home page, the appropriate layout is
+<code class="verbatim">index.html</code>.  You don&#39;t get a page if there is no layout.  And,
+probably because the home page is special, the <code class="verbatim">index.html</code> turns out
+to be processed even if there is no <code class="verbatim">_index.md</code>.</p>
+<p>
+I&#39;ve succeeded in getting a home page using the following two files: </p>
+<p>
+A <code class="verbatim">content/_index.org</code> file:</p>
+<div class="src src-org">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"><span style="color:#75715e">#+Title</span><span style="color:#75715e">: &#34;My nice home page&#34;</span>
+
+*<span style="font-weight:bold"> I write in Emacs</span>
+
+And this is my nice <span style="color:#a6e22e">=_index.org=</span> file.</code></pre></div>
+</div>
+<p>
+and a <code class="verbatim">layouts/index.html</code> file:</p>
+<div class="src src-html">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">header</span>&gt;  The page title is  {{ .Title }} &lt;/<span style="color:#f92672">header</span>&gt;
+
+And more layout stuff...
+
+{{ .Content }}</code></pre></div>
+</div>
+<p>
+As you see, the layout file is written in a mixture of <code class="verbatim">html</code> and
+stuff between braces that calls in content (and executes functions).
+To quote the <a href="https://gohugo.io/templates/introduction/">documentation</a>, &#34;Hugo uses Go’s <code class="verbatim">html/template</code> and
+<code class="verbatim">text/template</code> libraries as the basis for the templating.&#34;  This is
+all I know, but it has proved enough to make small tweaks to the
+layouts provided by the themes.</p>
+<p>
+Now let&#39;s try a regular static page.  Create a <code class="verbatim">normalpage.org</code> file
+in <code class="verbatim">content/</code> with a single-line content.  To produce a page from this
+file, again Hugo needs a template (if you run <code class="verbatim">hugo</code> at this point,
+Hugo will complain <code>found no layout file for &#34;HTML&#34; for kind
+&#34;page&#34;</code>).  There are certain rules to match a source file to a
+template, and they depend on the <em>kind</em> of the page.  I haven&#39;t
+completely figured out the rules to establish the kind of the page.
+Apparently, <code class="verbatim">content/_index.md</code> is a kind of it&#39;s own.  The other
+pages in <code class="verbatim">content/</code> (but not in subdirectories, see below) are, at
+least by default, of kind &#34;page&#34;, and the corresponding layout is
+<code class="verbatim">layouts/_default/single.html</code>.  Putting in this file just</p>
+<pre class="example">
+{{ .Content }}
+</pre>
+<p>I got the page to be served at <code class="verbatim">localhost:1313/normalpage/</code>.  Now I
+can link to it from the home page:</p>
+<div class="src src-org">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"> a [[<span style="color:#a6e22e">./normalpage</span>][<span style="color:#f92672">nice</span>]] link</code></pre></div>
+</div>
+<p>
+I found I could get Hugo to tell me what kind it is assigning to pages
+by adding this line to each layout:</p>
+<pre class="example">
+My kind is {{ .Kind }}
+</pre>
+<p>This turned out to be very useful; this way I learned that the home
+page (<code>_index.org</code>) is of kind <code class="verbatim">home</code>, and confirmed that
+<code class="verbatim">/content/normalpage.org</code> is of kind <code class="verbatim">page</code>.</p>
+<p>
+As a next level I add a subdirectory <code>/content/blog</code> and again a
+one-liner <code>something.org</code> file.  Now Hugo complains about lack of
+layout for kinds &#34;section&#34; and &#34;taxonomyTerm&#34;.  The page
+<code>http://localhost:1313/blog/</code> appears empty, although
+<code>http://localhost:1313/blog/something</code> displays my one-liner (which
+turns out to also be of kind <code class="verbatim">page</code>).</p>
+<p>
+Adding an <code class="verbatim">index.org</code> page in <code class="verbatim">content/blog</code> makes content appear on
+<code>blog/</code> (of kind <code class="verbatim">page</code>, i.e. using our <code class="verbatim">single.html</code> template).  If
+instead you name the file <code class="verbatim">_index.org</code>, then it is interpreted as of
+kind <code class="verbatim">section</code>, and processed with a <code class="verbatim">list.html</code> layout.  Normally
+this layout is written so that it displays a nice table of contents,
+or summary page, of all the files contained in the directory (which
+will be in any case translated to pages, but now they are
+automatically linked to).  I don&#39;t know how to write a template like
+this, but I don&#39;t need to since I will be using a theme anyway (you
+can see an example in Sara&#39;s post).  Apparently, if you include neither
+<code class="verbatim">index.md</code> nor <code class="verbatim">_index.md</code>, Hugo assumes an empty <code class="verbatim">_index.md</code> anyway
+(as in the case for the home page) and tries to read the <code class="verbatim">list.html</code>
+template, which would explain why it complained about the lack of a
+section layout when I put only a single file in <code class="verbatim">blog</code>.</p>
+<p>
+Up to now I have placed the layouts under <code class="verbatim">_default</code>, but if you put
+layouts in <code class="verbatim">layouts/blog</code>, then Hugo will use those instead when
+reading <code class="verbatim">content/blog</code>.  I also succeeded in using the <code class="verbatim">blog/</code> layouts
+from another subdirectory by setting</p>
+<pre class="example">
+#+type: blog
+</pre>
+<p>in the front matter.</p>
+<p>
+Armed with this basic knowledge (admittedly sketchy and incomplete), I
+felt confident enough to finally download a theme and start tweaking
+it to my taste.</p>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Installing a theme
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<p>
+I decided to try the <a href="https://themes.gohugo.io/academia-hugo/">Academia Hugo</a> theme:</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site personal
+cd personal
+git init .
+cd themes/
+git submodule add https://github.com/themefisher/academia-hugo.git</code></pre></div>
+</div>
+<p>
+Themes come with their set of layouts and static stuff that gives the
+site the final appearance.  Hugo can get the layouts directly from the
+theme directory instead of using your <code class="verbatim">layouts/</code> directory.  To use
+the theme you need to point Hugo to it from the configuration
+parameters.  These are written as <code class="verbatim">toml</code>, <code class="verbatim">yaml</code> or <code class="verbatim">json</code> files, either
+in the single file <code class="verbatim">config.toml</code> or in several files in
+<code class="verbatim">config/_default</code>.  I follow the second approach.</p>
+<pre class="example">
+mkdir -p config/_default
+mv config.toml config/_default/
+</pre>
+<p>
+Adding the line</p>
+<pre class="example">
+theme = &#34;academia-hugo&#34;
+</pre>
+<p>makes Hugo aware of the theme.</p>
+<p>
+Academia Hugo &#34;hijacks&#34; the home page (and this caused me a lot of
+confusion at first): its home layout (i.e. <code class="verbatim">layouts/index.htm</code>)
+ignores any content you care to write in <code class="verbatim">_index.md</code> and instead
+includes a <code class="verbatim">widget_page.html</code> layout which looks for content in
+<code class="verbatim">content/home</code> (including layout files within another is apparently
+called working with <em>partials</em> in Hugo jargon).  So we must start
+populating this directory.  But first, note that I am building a
+dual-language site.  Hugo supports this; essentially by placing the
+source for each language in parallel trees in <code class="verbatim">content/</code> (and setting
+some configuration variables).  So I create the directories for
+languages:</p>
+<pre class="example">
+mkdir -p content/en/home
+mkdir -p content/es/home
+</pre>
+<p>
+Now copy the configuration files <code>config.toml</code>, <code>languages.toml</code> and
+<code>params.toml</code> from the theme&#39;s <code class="verbatim">exampleSite</code> directory and start
+changing the parameters.  In particular add in <code class="verbatim">config.toml</code>,</p>
+<div class="src src-toml">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+<span style="color:#a6e22e">hasCJKLanguage</span> = <span style="color:#66d9ef">false</span>  <span style="color:#75715e"># Set `true` for Chinese/Japanese/Korean languages.</span>
+<span style="color:#a6e22e">defaultContentLanguageInSubdir</span> = <span style="color:#66d9ef">false</span>
+<span style="color:#a6e22e">removePathAccents</span> = <span style="color:#66d9ef">true</span>  <span style="color:#75715e"># Workaround for https://github.com/gohugoio/hugo/issues/5687</span>
+
+[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>]
+  <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en-us&#34;</span>
+  <span style="color:#a6e22e">contentDir</span> = <span style="color:#e6db74">&#34;content/en&#34;</span>
+
+[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">es</span>]
+  <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;es-ar&#34;</span>
+  <span style="color:#a6e22e">contentDir</span> = <span style="color:#e6db74">&#34;content/es&#34;</span></code></pre></div>
+</div>
+<p>Actually the language part I put in a different file, called
+<code class="verbatim">languages.toml</code>, which has the advantage that you can say <code class="verbatim">[en]</code>
+instead of <code class="verbatim">[languages.en]</code> at the beginning of the section, because
+all the contents of <code class="verbatim">languages.toml</code> are interpreted as if defined
+inside a <code class="verbatim">[languages]</code> section.</p>
+<p>
+Now place an empty <code class="verbatim">index.md</code> in each language <code class="verbatim">home/</code>. At this point
+<code class="verbatim">hugo serve -D</code> displays a site with a header and footer but otherwise
+empty.</p>
+<div id="outline-container-headline-3" class="outline-3">
+<h3 id="headline-3">
+Populating the home page
+</h3>
+<div id="outline-text-headline-3" class="outline-text-3">
+<p>
+The home (or landing) page is made from &#34;widgets&#34;, which can be copied
+and tweaked from the theme&#39;s example site.  Many widgets completely
+ignore any content and work only from the front matter, taking custom
+data from various parameter files.  I try to avoid this approach,
+which resembles too much a CMS, but I accepted it for the <code class="verbatim">about.md</code>
+widget.  I copied it from the example site to each of the <code class="verbatim">home/</code>
+directories.  To work, this widget requires data stored in
+<code class="verbatim">home/authors/admin/_index.md</code>.  Copy and edit from the example site;
+after the front matter, text can be added in <code class="verbatim">.md</code> format that will be
+displayed by the widget.</p>
+<p>
+I added an intro (<code class="verbatim">first.md</code>) by copying from the blank widget.  Note
+that the <code class="verbatim">weight</code> parameter is used to select the order in which the
+widgets appear.</p>
+</div>
+</div>
+<div id="outline-container-headline-4" class="outline-3">
+<h3 id="headline-4">
+Menu
+</h3>
+<div id="outline-text-headline-4" class="outline-text-3">
+<p>
+The theme comes with a menu, adding to it is done through the
+configuration files.  You can follow the theme&#39;s example, only that
+for multilingual sites the definitions must go in the <code class="verbatim">[languages]</code>
+section (or <code class="verbatim">langauges.toml</code> file):</p>
+<div class="src src-toml">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;#first&#34;</span>
+  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span>
+
+[[<span style="color:#a6e22e">es</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+  <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;#first&#34;</span>
+  <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span></code></pre></div>
+</div>
+<p>etc.</p>
+</div>
+</div>
+<div id="outline-container-headline-5" class="outline-3">
+<h3 id="headline-5">
+The teaching page
+</h3>
+<div id="outline-text-headline-5" class="outline-text-3">
+<p>
+I want a static &#34;subsite&#34; rendered from a source tree starting at
+<code class="verbatim">/es/docencia</code> (in the Spanish branch).  I want to put each course in
+a separate subdirectory so that material for different courses will be
+cleanly organized in source.  Hugo allows this, but it appears that if
+you put an <code class="verbatim">index.md</code> file in <code class="verbatim">content/es/docencia</code>, the
+subdirectories are ignored.  If you put a <code class="verbatim">_index.md</code> file, or
+nothing, subdirectories are read, and a summary page is generated.
+However, I didn&#39;t like the automatic summary page and I wanted to
+write my own.  I haven&#39;t figured out how to avoid the automatic
+summary page, so I ended up writing my own in
+<code class="verbatim">es/docencia/docencia.org</code>.  This page appears at
+<code class="verbatim">es/docencia/docencia</code>, and the automatic summary at <code class="verbatim">es/docencia</code>.  I
+simply avoided any links to the automatic summary, and link directly
+from the menu to <code class="verbatim">es/docencia/docencia</code>.  The default type for these
+pages seems to be <code class="verbatim">post</code>, which causes the theme to output a signature
+at the bottom (a bit redundant, since this is a personal site).  I
+avoided this by setting the type to <code class="verbatim">page</code> in the front matter:</p>
+<div class="src src-org">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"><span style="color:#75715e">#+title</span><span style="color:#75715e">: Docencia</span>
+<span style="color:#75715e">#+type</span><span style="color:#75715e">: page</span>
+<span style="color:#75715e">#+date</span><span style="color:#75715e">: 2020-07-17</span></code></pre></div>
+</div>
+<p>I could easily add PDF files with course material and link to them
+just placing them alongside the <code class="verbatim">.org</code> files in <code class="verbatim">content/</code>.</p>
+</div>
+</div>
+<div id="outline-container-headline-6" class="outline-3">
+<h3 id="headline-6">
+Blog
+</h3>
+<div id="outline-text-headline-6" class="outline-text-3">
+<p>
+The blog part worked out of the box by creating entries in a <code class="verbatim">posts</code>
+subdirectory.  You can use one file per post, or one directory per
+post (useful I think to attach images and such).  In the last case,
+the name of the directory becomes the link, and you write in
+<code class="verbatim">index.org</code>.  The summary is handled automatically.  Of course, a link
+in the menu or somewhere else is needed for readers to find the blog.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-headline-7" class="outline-2">
+<h2 id="headline-7">
+Conclusion
+</h2>
+<div id="outline-text-headline-7" class="outline-text-2">
+<p>
+There are still things to do to get the site I want (like adding a
+publication list created from my <code class="verbatim">BibTex</code> files, something I have yet
+to figure out).  But I&#39;ve succeeded in setting up a decent site, and
+after the initial difficulties, producing and publishing content with
+Hugo is proving a good experience.</p>
+</div>
+</div>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/en/tags/web/">Web</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      <img class="portrait mr-3" src="https://s.gravatar.com/avatar/74d739425dff6c20b8040a5878d313e1?s=200')" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="https://tgrigera.github.io">Tomás S. Grigera</a></h5>
+      
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:tgrigera@iflysib.unlp.edu.ar" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/grigeratomas" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=k1VIM6cAAAAJ&amp;hl=es" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/tgrigera" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tgrigera-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//tgrigera-github-io.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <p>
+          © T. S. Grigera 2020 &middot; 
+          Powered by
+          <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
+          <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline network-icon text-right">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://twitter.com/grigeratomas" target="_blank" rel="noopener" title="DM Me"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/tgrigera" target="_blank" rel="noopener" title="GitHub page"><i class="fab fa-github" aria-hidden="true"></i></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

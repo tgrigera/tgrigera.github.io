@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LaTeX on T. S. Grigera</title>
+    <link>https://tgrigera.github.io/en/tags/latex/</link>
+    <description>Recent content in LaTeX on T. S. Grigera</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; T. S. Grigera {year}</copyright>
+    <lastBuildDate>Fri, 11 Dec 2009 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://tgrigera.github.io/en/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using babel and xypic</title>
+      <link>https://tgrigera.github.io/en/post/babel-and-xpic/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/en/post/babel-and-xpic/</guid>
+      <description>&lt;p&gt;
+As widely documented, babel redefines the catcode for several
+characters, making xypic pictures to fail. The cure is to use
+&lt;code class=&#34;verbatim&#34;&gt;\shorthandoff{}&lt;/code&gt;, like this (the spanish option redefines &amp;#34;):&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+\shortandoff{&amp;#34;}
+\xy (stuff) \endxy
+\shorthandon{&amp;#34;}
+&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Creating BibTex styles</title>
+      <link>https://tgrigera.github.io/en/post/creating-bibtex-styles/</link>
+      <pubDate>Fri, 16 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://tgrigera.github.io/en/post/creating-bibtex-styles/</guid>
+      <description>&lt;p&gt;
+To create a new BibTeX style, run&lt;/p&gt;
+&lt;pre class=&#34;example&#34;&gt;
+latex makebst.tex
+&lt;/pre&gt;
+&lt;p&gt;to  proceed through  a long  list of  questions about  the  style. The
+result is another file that will  produce a .bst file after running it
+through LaTeX again. If you change  your mind about an answer, you can
+edit the intermediate file, it has pretty obvious format.&lt;/p&gt;
+&lt;p&gt;
+Check this &lt;a href=&#34;http://chenfuture.wordpress.com/2007/09/24/diy-your-bibtex-style-file&#34;&gt;post&lt;/a&gt; for more information about .bst files.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

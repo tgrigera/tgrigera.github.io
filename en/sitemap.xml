@@ -3,184 +3,184 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://tgrigera.github.io/post/</loc>
+    <loc>https://tgrigera.github.io/en/post/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://tgrigera.github.io/post/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/en/post/"
+                />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/hugo-site-i/</loc>
+    <loc>https://tgrigera.github.io/en/post/hugo-site-i/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/</loc>
+    <loc>https://tgrigera.github.io/en/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://tgrigera.github.io/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/en/"
+                />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/tags/</loc>
+    <loc>https://tgrigera.github.io/en/tags/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/tags/"
+                href="https://tgrigera.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tgrigera.github.io/tags/"
+                href="https://tgrigera.github.io/en/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/tags/web/</loc>
+    <loc>https://tgrigera.github.io/en/tags/web/</loc>
     <lastmod>2020-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/tags/debian/</loc>
+    <loc>https://tgrigera.github.io/en/tags/debian/</loc>
     <lastmod>2017-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/debian-on-lenovo-v510/</loc>
+    <loc>https://tgrigera.github.io/en/post/debian-on-lenovo-v510/</loc>
     <lastmod>2017-09-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/tags/emacs/</loc>
+    <loc>https://tgrigera.github.io/en/tags/emacs/</loc>
     <lastmod>2015-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/reference-management/</loc>
+    <loc>https://tgrigera.github.io/en/post/reference-management/</loc>
     <lastmod>2015-12-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/how-i-created-my-homepage/</loc>
+    <loc>https://tgrigera.github.io/en/post/how-i-created-my-homepage/</loc>
     <lastmod>2015-08-01T01:18:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/identifying-disks-by-uuid/</loc>
+    <loc>https://tgrigera.github.io/en/post/identifying-disks-by-uuid/</loc>
     <lastmod>2015-07-30T20:16:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/tags/linux/</loc>
+    <loc>https://tgrigera.github.io/en/tags/linux/</loc>
     <lastmod>2015-07-30T20:16:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/tags/latex/</loc>
+    <loc>https://tgrigera.github.io/en/tags/latex/</loc>
     <lastmod>2009-12-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/babel-and-xpic/</loc>
+    <loc>https://tgrigera.github.io/en/post/babel-and-xpic/</loc>
     <lastmod>2009-12-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/burning-mixed-cds/burning-mixed-cds/</loc>
+    <loc>https://tgrigera.github.io/en/post/burning-mixed-cds/burning-mixed-cds/</loc>
     <lastmod>2009-12-10T19:19:26+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/converting-graphic-formats/</loc>
+    <loc>https://tgrigera.github.io/en/post/converting-graphic-formats/</loc>
     <lastmod>2009-10-17T20:02:06+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/tags/graphics/</loc>
+    <loc>https://tgrigera.github.io/en/tags/graphics/</loc>
     <lastmod>2009-10-17T20:02:06+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/post/creating-bibtex-styles/</loc>
+    <loc>https://tgrigera.github.io/en/post/creating-bibtex-styles/</loc>
     <lastmod>2009-10-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/authors/admin/</loc>
+    <loc>https://tgrigera.github.io/en/authors/admin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/authors/admin/"
+                href="https://tgrigera.github.io/authors/admin/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tgrigera.github.io/authors/admin/"
+                href="https://tgrigera.github.io/en/authors/admin/"
                 />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/home/</loc>
+    <loc>https://tgrigera.github.io/en/home/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/home/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://tgrigera.github.io/home/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://tgrigera.github.io/authors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://tgrigera.github.io/es/authors/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
+                href="https://tgrigera.github.io/en/home/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://tgrigera.github.io/en/authors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
                 href="https://tgrigera.github.io/authors/"
                 />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tgrigera.github.io/en/authors/"
+                />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/categories/</loc>
+    <loc>https://tgrigera.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://tgrigera.github.io/es/categories/"
+                href="https://tgrigera.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://tgrigera.github.io/categories/"
+                href="https://tgrigera.github.io/en/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://tgrigera.github.io/teaching/</loc>
+    <loc>https://tgrigera.github.io/en/teaching/</loc>
   </url>
   
 </urlset>
