@@ -131,7 +131,7 @@ I&amp;#39;ve succeeded in getting a home page using the following two files: &lt
 &lt;p&gt;
 A &lt;code class=&#34;verbatim&#34;&gt;content/_index.org&lt;/code&gt; file:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+Title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;#34;My nice home page&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+Title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;#34;My nice home page&amp;#34;&lt;/span&gt;
 
 *&lt;span style=&#34;font-weight:bold&#34;&gt; I write in Emacs&lt;/span&gt;
 
@@ -140,7 +140,7 @@ And this is my nice &lt;span style=&#34;color:#a6e22e&#34;&gt;=_index.org=&lt;/s
 &lt;p&gt;
 and a &lt;code class=&#34;verbatim&#34;&gt;layouts/index.html&lt;/code&gt; file:&lt;/p&gt;
 &lt;div class=&#34;src src-html&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;  The page title is  {{ .Title }} &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;  The page title is  {{ .Title }} &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;
 
 And more layout stuff...
 
@@ -171,7 +171,7 @@ least by default, of kind &amp;#34;page&amp;#34;, and the corresponding layout i
 &lt;p&gt;I got the page to be served at &lt;code class=&#34;verbatim&#34;&gt;localhost:1313/normalpage/&lt;/code&gt;.  Now I
 can link to it from the home page:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt; a [[&lt;span style=&#34;color:#a6e22e&#34;&gt;./normalpage&lt;/span&gt;][&lt;span style=&#34;color:#f92672&#34;&gt;nice&lt;/span&gt;]] link&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt; a [[&lt;span style=&#34;color:#a6e22e&#34;&gt;./normalpage&lt;/span&gt;][&lt;span style=&#34;color:#f92672&#34;&gt;nice&lt;/span&gt;]] link&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 I found I could get Hugo to tell me what kind it is assigning to pages
@@ -227,7 +227,7 @@ Installing a theme
 &lt;p&gt;
 I decided to try the &lt;a href=&#34;https://themes.gohugo.io/academia-hugo/&#34;&gt;Academia Hugo&lt;/a&gt; theme:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo new site personal
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo new site personal
 cd personal
 git init .
 cd themes/
@@ -272,7 +272,7 @@ Now copy the configuration files &lt;code&gt;config.toml&lt;/code&gt;, &lt;code&
 &lt;code&gt;params.toml&lt;/code&gt; from the theme&amp;#39;s &lt;code class=&#34;verbatim&#34;&gt;exampleSite&lt;/code&gt; directory and start
 changing the parameters.  In particular add in &lt;code class=&#34;verbatim&#34;&gt;config.toml&lt;/code&gt;,&lt;/p&gt;
 &lt;div class=&#34;src src-toml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;defaultContentLanguage&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;defaultContentLanguage&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;hasCJKLanguage&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Set `true` for Chinese/Japanese/Korean languages.&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;defaultContentLanguageInSubdir&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;removePathAccents&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Workaround for https://github.com/gohugoio/hugo/issues/5687&lt;/span&gt;
@@ -327,7 +327,7 @@ configuration files.  You can follow the theme&amp;#39;s example, only that
 for multilingual sites the definitions must go in the &lt;code class=&#34;verbatim&#34;&gt;[languages]&lt;/code&gt;
 section (or &lt;code class=&#34;verbatim&#34;&gt;langauges.toml&lt;/code&gt; file):&lt;/p&gt;
 &lt;div class=&#34;src src-toml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[[&lt;span style=&#34;color:#a6e22e&#34;&gt;en&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[[&lt;span style=&#34;color:#a6e22e&#34;&gt;en&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
   &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Home&amp;#34;&lt;/span&gt;
   &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#first&amp;#34;&lt;/span&gt;
   &lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
@@ -364,7 +364,7 @@ pages seems to be &lt;code class=&#34;verbatim&#34;&gt;post&lt;/code&gt;, which 
 at the bottom (a bit redundant, since this is a personal site).  I
 avoided this by setting the type to &lt;code class=&#34;verbatim&#34;&gt;page&lt;/code&gt; in the front matter:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: Docencia&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: Docencia&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#+type&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: page&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#+date&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: 2020-07-17&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -559,34 +559,20 @@ help to others.&lt;/p&gt;
 &lt;p&gt;
 My setup allows me to:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;get citations easily into my database from journals&amp;#39; websites or
-from pdf metadata (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;backup the database and synchronise it among computers through the
-cloud (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;export data to a BibTeX file, kept automatically updated,
-from which various Emacs packages take the job (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;insert citations into LaTeX documents with a powerful and
-convenient search interface (&lt;code class=&#34;verbatim&#34;&gt;reftex&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;insert citations into org-mode documents, which correctly export to
-LaTex and HTML (&lt;code class=&#34;verbatim&#34;&gt;org-ref&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;open the article&amp;#39;s PDF from Emacs (from the link or through a
-search interface)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;take notes about an article and get at them through the citation
-link or a search interface (&lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;get citations easily into my database from journals&amp;#39; websites or
+from pdf metadata (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;backup the database and synchronise it among computers through the
+cloud (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;export data to a BibTeX file, kept automatically updated,
+from which various Emacs packages take the job (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;insert citations into LaTeX documents with a powerful and
+convenient search interface (&lt;code class=&#34;verbatim&#34;&gt;reftex&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;insert citations into org-mode documents, which correctly export to
+LaTex and HTML (&lt;code class=&#34;verbatim&#34;&gt;org-ref&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;open the article&amp;#39;s PDF from Emacs (from the link or through a
+search interface)&lt;/li&gt;
+&lt;li&gt;take notes about an article and get at them through the citation
+link or a search interface (&lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-1&#34;&gt;
@@ -625,7 +611,7 @@ When writing directly a LaTeX document, I insert with &lt;code class=&#34;verbat
 available from MELPA).  You need to specify the &lt;code class=&#34;verbatim&#34;&gt;.bib&lt;/code&gt; files you will
 be using, plus some useful key-bindings.&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt; (setq reftex-default-bibliography &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/biblio/main.bib&amp;#34;&lt;/span&gt;) )
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt; (setq reftex-default-bibliography &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/biblio/main.bib&amp;#34;&lt;/span&gt;) )
  (setq helm-bibtex-bibliography &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/biblio/main.bib&amp;#34;&lt;/span&gt;)
  (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TeX-mode-hook&lt;/span&gt;
    (lambda() (&lt;span style=&#34;color:#a6e22e&#34;&gt;define-key&lt;/span&gt; TeX-mode-map &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\C-ch&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;helm-bibtex&lt;/span&gt;)) )&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -679,7 +665,7 @@ will link directly to the Zotero attached file).  You must tell
 files, by default in Emacs itself, but you can change this to another
 viewer as shown:&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq bibtex-completion-pdf-field &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq bibtex-completion-pdf-field &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;)
 (setq bibtex-completion-pdf-open-function
   (lambda (fpath)
     (&lt;span style=&#34;color:#a6e22e&#34;&gt;start-process&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;evince&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*helm-bibtex-evince*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/usr/bin/evince&amp;#34;&lt;/span&gt; fpath)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -722,7 +708,7 @@ notes, which can be accessed as one of the actions (press &lt;code class=&#34;ve
 the &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt; search window.  The file is specified in your
 &lt;code class=&#34;verbatim&#34;&gt;.emacs&lt;/code&gt; with something like&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq helm-bibtex-notes-path &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/doc/apuntes/bibnotes.org&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq helm-bibtex-notes-path &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/doc/apuntes/bibnotes.org&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 You can also access the notes from a previously-inserted citation like
@@ -876,7 +862,7 @@ The three steps (filtering, converting and building the source page
 for Nikola) are done in the following &lt;code class=&#34;verbatim&#34;&gt;bash&lt;/code&gt; script (assuming the
 desired Zotero collections has been exported in subdirectory &lt;code&gt;own&lt;/code&gt;):&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
   sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/file =/ {
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;       s%\([{;]\)[^:;]*:\([^:;]*\):application/pdf\([;}]\)%\1\2\3%;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;       s%{[^:;]*:[^:;]*:[^:;]*;%{%;
@@ -1013,31 +999,26 @@ wodim dev=/dev/cdrom -eject -data cd_plus.iso
 &lt;p&gt;
 Command-line utilities to convert between graphic formats I have found useful:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;eps to pdf: ps2pdf with -dEPSCrop option to produce the pdf
-“bounding box”&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;epstopdf (part of texlive package). Seems better than the above,
-automatically uses bounding box and respects orientation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;convert is a command-line tool to convert among various
+&lt;li&gt;eps to pdf: ps2pdf with -dEPSCrop option to produce the pdf
+“bounding box”&lt;/li&gt;
+&lt;li&gt;epstopdf (part of texlive package). Seems better than the above,
+automatically uses bounding box and respects orientation.&lt;/li&gt;
+&lt;li&gt;convert is a command-line tool to convert among various
 formats. Very easy basic usage (assumes target format from file
-extension). Part of ImageMagic.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;pdftk is a tool to manipulate pdf files (split, join and much
-more).&lt;/p&gt;
+extension). Part of ImageMagic.&lt;/li&gt;
+&lt;li&gt;pdftk is a tool to manipulate pdf files (split, join and much
+more).&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-1&#34;&gt;
 Extracting images from MSWord documents
 &lt;/h3&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The best way is to save the document as web page (from the File menu)
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+The best way is to save the document as web page (from the File menu)
 and look in the directory for the image files.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     

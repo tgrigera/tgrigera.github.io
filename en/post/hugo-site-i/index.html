@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.74.2" />
+  <meta name="generator" content="Hugo 0.92.2" />
 
   
 
@@ -85,7 +85,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.1cb3ac49332c2574347cb83174f02db0.css">
+  <link rel="stylesheet" href="/css/academia.min.830f92cd8cbdf05878baaa692e7406ba.css">
 
   
 
@@ -636,7 +636,7 @@ I&#39;ve succeeded in getting a home page using the following two files: </p>
 <p>
 A <code class="verbatim">content/_index.org</code> file:</p>
 <div class="src src-org">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"><span style="color:#75715e">#+Title</span><span style="color:#75715e">: &#34;My nice home page&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"><span style="color:#75715e">#+Title</span><span style="color:#75715e">: &#34;My nice home page&#34;</span>
 
 *<span style="font-weight:bold"> I write in Emacs</span>
 
@@ -645,7 +645,7 @@ And this is my nice <span style="color:#a6e22e">=_index.org=</span> file.</code>
 <p>
 and a <code class="verbatim">layouts/index.html</code> file:</p>
 <div class="src src-html">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">header</span>&gt;  The page title is  {{ .Title }} &lt;/<span style="color:#f92672">header</span>&gt;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">header</span>&gt;  The page title is  {{ .Title }} &lt;/<span style="color:#f92672">header</span>&gt;
 
 And more layout stuff...
 
@@ -676,7 +676,7 @@ least by default, of kind &#34;page&#34;, and the corresponding layout is
 <p>I got the page to be served at <code class="verbatim">localhost:1313/normalpage/</code>.  Now I
 can link to it from the home page:</p>
 <div class="src src-org">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"> a [[<span style="color:#a6e22e">./normalpage</span>][<span style="color:#f92672">nice</span>]] link</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"> a [[<span style="color:#a6e22e">./normalpage</span>][<span style="color:#f92672">nice</span>]] link</code></pre></div>
 </div>
 <p>
 I found I could get Hugo to tell me what kind it is assigning to pages
@@ -732,7 +732,7 @@ Installing a theme
 <p>
 I decided to try the <a href="https://themes.gohugo.io/academia-hugo/">Academia Hugo</a> theme:</p>
 <div class="src src-sh">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site personal
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">hugo new site personal
 cd personal
 git init .
 cd themes/
@@ -777,7 +777,7 @@ Now copy the configuration files <code>config.toml</code>, <code>languages.toml<
 <code>params.toml</code> from the theme&#39;s <code class="verbatim">exampleSite</code> directory and start
 changing the parameters.  In particular add in <code class="verbatim">config.toml</code>,</p>
 <div class="src src-toml">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
 <span style="color:#a6e22e">hasCJKLanguage</span> = <span style="color:#66d9ef">false</span>  <span style="color:#75715e"># Set `true` for Chinese/Japanese/Korean languages.</span>
 <span style="color:#a6e22e">defaultContentLanguageInSubdir</span> = <span style="color:#66d9ef">false</span>
 <span style="color:#a6e22e">removePathAccents</span> = <span style="color:#66d9ef">true</span>  <span style="color:#75715e"># Workaround for https://github.com/gohugoio/hugo/issues/5687</span>
@@ -832,7 +832,7 @@ configuration files.  You can follow the theme&#39;s example, only that
 for multilingual sites the definitions must go in the <code class="verbatim">[languages]</code>
 section (or <code class="verbatim">langauges.toml</code> file):</p>
 <div class="src src-toml">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[[<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
   <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
   <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;#first&#34;</span>
   <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">10</span>
@@ -869,7 +869,7 @@ pages seems to be <code class="verbatim">post</code>, which causes the theme to 
 at the bottom (a bit redundant, since this is a personal site).  I
 avoided this by setting the type to <code class="verbatim">page</code> in the front matter:</p>
 <div class="src src-org">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"><span style="color:#75715e">#+title</span><span style="color:#75715e">: Docencia</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-org" data-lang="org"><span style="color:#75715e">#+title</span><span style="color:#75715e">: Docencia</span>
 <span style="color:#75715e">#+type</span><span style="color:#75715e">: page</span>
 <span style="color:#75715e">#+date</span><span style="color:#75715e">: 2020-07-17</span></code></pre></div>
 </div>
@@ -1128,7 +1128,7 @@ Hugo is proving a good experience.</p>
     
     
     
-    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
+    <script src="/js/academia.min.e40e230d9b3dfeac86994156b6388764.js"></script>
 
     
 
@@ -1146,7 +1146,7 @@ Hugo is proving a good experience.</p>
       <div class="col-md-6">
         
         <p>
-          © T. S. Grigera 2021 &middot; 
+          © T. S. Grigera 2022 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

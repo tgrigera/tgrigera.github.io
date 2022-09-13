@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academia 4.3.1">
-  <meta name="generator" content="Hugo 0.74.2" />
+  <meta name="generator" content="Hugo 0.92.2" />
 
   
 
@@ -86,7 +86,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academia.min.1cb3ac49332c2574347cb83174f02db0.css">
+  <link rel="stylesheet" href="/css/academia.min.830f92cd8cbdf05878baaa692e7406ba.css">
 
   
 
@@ -536,34 +536,20 @@ help to others.</p>
 <p>
 My setup allows me to:</p>
 <ul>
-<li>
-<p>get citations easily into my database from journals&#39; websites or
-from pdf metadata (<code class="verbatim">Zotero</code>)</p>
-</li>
-<li>
-<p>backup the database and synchronise it among computers through the
-cloud (<code class="verbatim">Zotero</code>)</p>
-</li>
-<li>
-<p>export data to a BibTeX file, kept automatically updated,
-from which various Emacs packages take the job (<code class="verbatim">Zotero</code>)</p>
-</li>
-<li>
-<p>insert citations into LaTeX documents with a powerful and
-convenient search interface (<code class="verbatim">reftex</code> and <code class="verbatim">helm-bibtex</code>)</p>
-</li>
-<li>
-<p>insert citations into org-mode documents, which correctly export to
-LaTex and HTML (<code class="verbatim">org-ref</code> and <code class="verbatim">helm-bibtex</code>)</p>
-</li>
-<li>
-<p>open the article&#39;s PDF from Emacs (from the link or through a
-search interface)</p>
-</li>
-<li>
-<p>take notes about an article and get at them through the citation
-link or a search interface (<code class="verbatim">helm-bibtex</code>)</p>
-</li>
+<li>get citations easily into my database from journals&#39; websites or
+from pdf metadata (<code class="verbatim">Zotero</code>)</li>
+<li>backup the database and synchronise it among computers through the
+cloud (<code class="verbatim">Zotero</code>)</li>
+<li>export data to a BibTeX file, kept automatically updated,
+from which various Emacs packages take the job (<code class="verbatim">Zotero</code>)</li>
+<li>insert citations into LaTeX documents with a powerful and
+convenient search interface (<code class="verbatim">reftex</code> and <code class="verbatim">helm-bibtex</code>)</li>
+<li>insert citations into org-mode documents, which correctly export to
+LaTex and HTML (<code class="verbatim">org-ref</code> and <code class="verbatim">helm-bibtex</code>)</li>
+<li>open the article&#39;s PDF from Emacs (from the link or through a
+search interface)</li>
+<li>take notes about an article and get at them through the citation
+link or a search interface (<code class="verbatim">helm-bibtex</code>)</li>
 </ul>
 <div id="outline-container-headline-1" class="outline-3">
 <h3 id="headline-1">
@@ -602,7 +588,7 @@ When writing directly a LaTeX document, I insert with <code class="verbatim">ref
 available from MELPA).  You need to specify the <code class="verbatim">.bib</code> files you will
 be using, plus some useful key-bindings.</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"> (setq reftex-default-bibliography <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;~/biblio/main.bib&#34;</span>) )
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp"> (setq reftex-default-bibliography <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;~/biblio/main.bib&#34;</span>) )
  (setq helm-bibtex-bibliography <span style="color:#f92672">&#39;</span>(<span style="color:#e6db74">&#34;~/biblio/main.bib&#34;</span>)
  (add-hook <span style="color:#e6db74">&#39;TeX-mode-hook</span>
    (lambda() (<span style="color:#a6e22e">define-key</span> TeX-mode-map <span style="color:#e6db74">&#34;\C-ch&#34;</span> <span style="color:#e6db74">&#39;helm-bibtex</span>)) )</code></pre></div>
@@ -656,7 +642,7 @@ will link directly to the Zotero attached file).  You must tell
 files, by default in Emacs itself, but you can change this to another
 viewer as shown:</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq bibtex-completion-pdf-field <span style="color:#e6db74">&#34;file&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq bibtex-completion-pdf-field <span style="color:#e6db74">&#34;file&#34;</span>)
 (setq bibtex-completion-pdf-open-function
   (lambda (fpath)
     (<span style="color:#a6e22e">start-process</span> <span style="color:#e6db74">&#34;evince&#34;</span> <span style="color:#e6db74">&#34;*helm-bibtex-evince*&#34;</span> <span style="color:#e6db74">&#34;/usr/bin/evince&#34;</span> fpath)))</code></pre></div>
@@ -699,7 +685,7 @@ notes, which can be accessed as one of the actions (press <code class="verbatim"
 the <code class="verbatim">helm-bibtex</code> search window.  The file is specified in your
 <code class="verbatim">.emacs</code> with something like</p>
 <div class="src src-emacs-lisp">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq helm-bibtex-notes-path <span style="color:#e6db74">&#34;~/doc/apuntes/bibnotes.org&#34;</span>)</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(setq helm-bibtex-notes-path <span style="color:#e6db74">&#34;~/doc/apuntes/bibnotes.org&#34;</span>)</code></pre></div>
 </div>
 <p>
 You can also access the notes from a previously-inserted citation like
@@ -943,7 +929,7 @@ them and hopefully share on updates to this post.</p>
     
     
     
-    <script src="/js/academia.min.7276a6a3624de715a5c7f54c7c07696d.js"></script>
+    <script src="/js/academia.min.e40e230d9b3dfeac86994156b6388764.js"></script>
 
     
 
@@ -961,7 +947,7 @@ them and hopefully share on updates to this post.</p>
       <div class="col-md-6">
         
         <p>
-          © T. S. Grigera 2021 &middot; 
+          © T. S. Grigera 2022 &middot; 
           Powered by
           <a href="https://themefisher.com" target="_blank" rel="noopener">themefisher</a> for
           <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.

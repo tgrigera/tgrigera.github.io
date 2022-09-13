@@ -131,7 +131,7 @@ I&amp;#39;ve succeeded in getting a home page using the following two files: &lt
 &lt;p&gt;
 A &lt;code class=&#34;verbatim&#34;&gt;content/_index.org&lt;/code&gt; file:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+Title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;#34;My nice home page&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+Title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: &amp;#34;My nice home page&amp;#34;&lt;/span&gt;
 
 *&lt;span style=&#34;font-weight:bold&#34;&gt; I write in Emacs&lt;/span&gt;
 
@@ -140,7 +140,7 @@ And this is my nice &lt;span style=&#34;color:#a6e22e&#34;&gt;=_index.org=&lt;/s
 &lt;p&gt;
 and a &lt;code class=&#34;verbatim&#34;&gt;layouts/index.html&lt;/code&gt; file:&lt;/p&gt;
 &lt;div class=&#34;src src-html&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;  The page title is  {{ .Title }} &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;  The page title is  {{ .Title }} &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;header&lt;/span&gt;&amp;gt;
 
 And more layout stuff...
 
@@ -171,7 +171,7 @@ least by default, of kind &amp;#34;page&amp;#34;, and the corresponding layout i
 &lt;p&gt;I got the page to be served at &lt;code class=&#34;verbatim&#34;&gt;localhost:1313/normalpage/&lt;/code&gt;.  Now I
 can link to it from the home page:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt; a [[&lt;span style=&#34;color:#a6e22e&#34;&gt;./normalpage&lt;/span&gt;][&lt;span style=&#34;color:#f92672&#34;&gt;nice&lt;/span&gt;]] link&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt; a [[&lt;span style=&#34;color:#a6e22e&#34;&gt;./normalpage&lt;/span&gt;][&lt;span style=&#34;color:#f92672&#34;&gt;nice&lt;/span&gt;]] link&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 I found I could get Hugo to tell me what kind it is assigning to pages
@@ -227,7 +227,7 @@ Installing a theme
 &lt;p&gt;
 I decided to try the &lt;a href=&#34;https://themes.gohugo.io/academia-hugo/&#34;&gt;Academia Hugo&lt;/a&gt; theme:&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo new site personal
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;hugo new site personal
 cd personal
 git init .
 cd themes/
@@ -272,7 +272,7 @@ Now copy the configuration files &lt;code&gt;config.toml&lt;/code&gt;, &lt;code&
 &lt;code&gt;params.toml&lt;/code&gt; from the theme&amp;#39;s &lt;code class=&#34;verbatim&#34;&gt;exampleSite&lt;/code&gt; directory and start
 changing the parameters.  In particular add in &lt;code class=&#34;verbatim&#34;&gt;config.toml&lt;/code&gt;,&lt;/p&gt;
 &lt;div class=&#34;src src-toml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;defaultContentLanguage&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;defaultContentLanguage&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;hasCJKLanguage&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Set `true` for Chinese/Japanese/Korean languages.&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;defaultContentLanguageInSubdir&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
 &lt;span style=&#34;color:#a6e22e&#34;&gt;removePathAccents&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Workaround for https://github.com/gohugoio/hugo/issues/5687&lt;/span&gt;
@@ -327,7 +327,7 @@ configuration files.  You can follow the theme&amp;#39;s example, only that
 for multilingual sites the definitions must go in the &lt;code class=&#34;verbatim&#34;&gt;[languages]&lt;/code&gt;
 section (or &lt;code class=&#34;verbatim&#34;&gt;langauges.toml&lt;/code&gt; file):&lt;/p&gt;
 &lt;div class=&#34;src src-toml&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[[&lt;span style=&#34;color:#a6e22e&#34;&gt;en&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[[&lt;span style=&#34;color:#a6e22e&#34;&gt;en&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;main&lt;/span&gt;]]
   &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Home&amp;#34;&lt;/span&gt;
   &lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;#first&amp;#34;&lt;/span&gt;
   &lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt; = &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
@@ -364,7 +364,7 @@ pages seems to be &lt;code class=&#34;verbatim&#34;&gt;post&lt;/code&gt;, which 
 at the bottom (a bit redundant, since this is a personal site).  I
 avoided this by setting the type to &lt;code class=&#34;verbatim&#34;&gt;page&lt;/code&gt; in the front matter:&lt;/p&gt;
 &lt;div class=&#34;src src-org&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: Docencia&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-org&#34; data-lang=&#34;org&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#+title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: Docencia&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#+type&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: page&lt;/span&gt;
 &lt;span style=&#34;color:#75715e&#34;&gt;#+date&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;: 2020-07-17&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -533,7 +533,7 @@ The three steps (filtering, converting and building the source page
 for Nikola) are done in the following &lt;code class=&#34;verbatim&#34;&gt;bash&lt;/code&gt; script (assuming the
 desired Zotero collections has been exported in subdirectory &lt;code&gt;own&lt;/code&gt;):&lt;/p&gt;
 &lt;div class=&#34;src src-sh&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
   sed &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/file =/ {
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;       s%\([{;]\)[^:;]*:\([^:;]*\):application/pdf\([;}]\)%\1\2\3%;
 &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;       s%{[^:;]*:[^:;]*:[^:;]*;%{%;

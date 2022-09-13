@@ -36,43 +36,36 @@ dispuestos en 2016) calculé el precio de la energía suministrada.&lt;/p&gt;
 &lt;p&gt;
 Antes de compartir el resultado, se imponen algunos comentarios:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Los precios de la energía dependen del área geográfica, del tipo
+&lt;li&gt;Los precios de la energía dependen del área geográfica, del tipo
 de usuario y de la cantidad consumida.  El resultado que doy se
-aplica a la ciudad de La Plata y a un consumo residencial.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;La distribuidora de gas mide el volumen de gas entregado, mientras
+aplica a la ciudad de La Plata y a un consumo residencial.&lt;/li&gt;
+&lt;li&gt;La distribuidora de gas mide el volumen de gas entregado, mientras
 que la de electricidad mide la energía entregada en &lt;code&gt;kWh&lt;/code&gt;
 (kilowatt-hora).  Para poder comparar los precios hay que obtener
 la energía entregada en las mismas unidades; yo elegí el &lt;code&gt;MJ&lt;/code&gt; (mega
 Joule).  Un &lt;code&gt;kWh&lt;/code&gt; equivale a 3.6 MJ, mientras que un $m^3$ de gas
 equivale (según lo informado por la propia distribuidora en la
-factura) a 9300 kcal (kilocalorias), o 38.9 MJ.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;El valor facturado por las distribuidoras está compuesto por un
+factura) a 9300 kcal (kilocalorias), o 38.9 MJ.&lt;/li&gt;
+&lt;li&gt;El valor facturado por las distribuidoras está compuesto por un
 precio asignado a la energía entregada (que suele depender del
 volumen consumido), de cargos fijos por distribución (de modo que
 hay un mínimo de facturación sólo por mantener el suministro) y de
 impuestos nacionales y provinciales.  El precio que doy aquí es un
 precio promedio que surge de considerar el precio final de la
-factura.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Debido a que el precio depende del consumo y a que el consumo
+factura.&lt;/li&gt;
+&lt;li&gt;Debido a que el precio depende del consumo y a que el consumo
 depende de la época del año (calefacción), y posiblemente a otros
 factores, se observa variabilidad en el precio de la unidad de
 energía a lo largo del año.  La comparación que sigue está basada
-en el precio promediado a lo largo de todo el período.&lt;/p&gt;
+en el precio promediado a lo largo de todo el período.&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-1&#34;&gt;
 Los precios
 &lt;/h3&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;En resumen el precio promedio del MJ es&lt;/p&gt;
+&lt;div id=&#34;outline-text-headline-1&#34; class=&#34;outline-text-3&#34;&gt;
+&lt;p&gt;
+En resumen el precio promedio del MJ es&lt;/p&gt;
 &lt;table&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
@@ -97,6 +90,8 @@ cara que la que puede obtenerse por combustión de gas domiciliario.
 Estos valores corresponden a tarifas residenciales de la ciudad de La
 Plata, para consumos de gas de entre 85 y 500 m^3 (bimestrales), y
 eléctricos de alrededor de 220 kWh mensuales.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div id=&#34;outline-container-headline-2&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-2&#34;&gt;
 ¿Fuera la pava eléctrica?
