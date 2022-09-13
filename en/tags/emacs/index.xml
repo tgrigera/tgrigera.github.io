@@ -29,34 +29,20 @@ help to others.&lt;/p&gt;
 &lt;p&gt;
 My setup allows me to:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;get citations easily into my database from journals&amp;#39; websites or
-from pdf metadata (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;backup the database and synchronise it among computers through the
-cloud (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;export data to a BibTeX file, kept automatically updated,
-from which various Emacs packages take the job (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;insert citations into LaTeX documents with a powerful and
-convenient search interface (&lt;code class=&#34;verbatim&#34;&gt;reftex&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;insert citations into org-mode documents, which correctly export to
-LaTex and HTML (&lt;code class=&#34;verbatim&#34;&gt;org-ref&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;open the article&amp;#39;s PDF from Emacs (from the link or through a
-search interface)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;take notes about an article and get at them through the citation
-link or a search interface (&lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;get citations easily into my database from journals&amp;#39; websites or
+from pdf metadata (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;backup the database and synchronise it among computers through the
+cloud (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;export data to a BibTeX file, kept automatically updated,
+from which various Emacs packages take the job (&lt;code class=&#34;verbatim&#34;&gt;Zotero&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;insert citations into LaTeX documents with a powerful and
+convenient search interface (&lt;code class=&#34;verbatim&#34;&gt;reftex&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;insert citations into org-mode documents, which correctly export to
+LaTex and HTML (&lt;code class=&#34;verbatim&#34;&gt;org-ref&lt;/code&gt; and &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;open the article&amp;#39;s PDF from Emacs (from the link or through a
+search interface)&lt;/li&gt;
+&lt;li&gt;take notes about an article and get at them through the citation
+link or a search interface (&lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div id=&#34;outline-container-headline-1&#34; class=&#34;outline-3&#34;&gt;
 &lt;h3 id=&#34;headline-1&#34;&gt;
@@ -95,7 +81,7 @@ When writing directly a LaTeX document, I insert with &lt;code class=&#34;verbat
 available from MELPA).  You need to specify the &lt;code class=&#34;verbatim&#34;&gt;.bib&lt;/code&gt; files you will
 be using, plus some useful key-bindings.&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt; (setq reftex-default-bibliography &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/biblio/main.bib&amp;#34;&lt;/span&gt;) )
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt; (setq reftex-default-bibliography &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/biblio/main.bib&amp;#34;&lt;/span&gt;) )
  (setq helm-bibtex-bibliography &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#39;&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/biblio/main.bib&amp;#34;&lt;/span&gt;)
  (add-hook &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;TeX-mode-hook&lt;/span&gt;
    (lambda() (&lt;span style=&#34;color:#a6e22e&#34;&gt;define-key&lt;/span&gt; TeX-mode-map &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\C-ch&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;helm-bibtex&lt;/span&gt;)) )&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -149,7 +135,7 @@ will link directly to the Zotero attached file).  You must tell
 files, by default in Emacs itself, but you can change this to another
 viewer as shown:&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq bibtex-completion-pdf-field &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;)
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq bibtex-completion-pdf-field &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;file&amp;#34;&lt;/span&gt;)
 (setq bibtex-completion-pdf-open-function
   (lambda (fpath)
     (&lt;span style=&#34;color:#a6e22e&#34;&gt;start-process&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;evince&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;*helm-bibtex-evince*&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/usr/bin/evince&amp;#34;&lt;/span&gt; fpath)))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -192,7 +178,7 @@ notes, which can be accessed as one of the actions (press &lt;code class=&#34;ve
 the &lt;code class=&#34;verbatim&#34;&gt;helm-bibtex&lt;/code&gt; search window.  The file is specified in your
 &lt;code class=&#34;verbatim&#34;&gt;.emacs&lt;/code&gt; with something like&lt;/p&gt;
 &lt;div class=&#34;src src-emacs-lisp&#34;&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq helm-bibtex-notes-path &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/doc/apuntes/bibnotes.org&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-emacs-lisp&#34; data-lang=&#34;emacs-lisp&#34;&gt;(setq helm-bibtex-notes-path &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;~/doc/apuntes/bibnotes.org&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;
 You can also access the notes from a previously-inserted citation like

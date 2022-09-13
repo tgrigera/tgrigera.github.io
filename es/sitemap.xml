@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://tgrigera.github.io/docencia/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/docencia/docencia/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/talk/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/</loc>
     <lastmod>2020-07-17T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -30,19 +23,16 @@
                 hreflang="es"
                 href="https://tgrigera.github.io/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://tgrigera.github.io/docencia/mecanicaestadisticaii/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tgrigera.github.io/docencia/simulaciones/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/docencia/mecanicaclasica/</loc>
     <lastmod>2017-06-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/post/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -55,19 +45,13 @@
                 hreflang="es"
                 href="https://tgrigera.github.io/post/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/tags/energia/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/post/precio-gas-electricidad/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/tags/</loc>
     <lastmod>2017-03-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -80,19 +64,13 @@
                 hreflang="es"
                 href="https://tgrigera.github.io/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/docencia/fisicagrali/</loc>
     <lastmod>2016-03-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/docencia/computacion/</loc>
     <lastmod>2015-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/authors/admin/</loc>
     <xhtml:link
                 rel="alternate"
@@ -104,9 +82,9 @@
                 hreflang="es"
                 href="https://tgrigera.github.io/authors/admin/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://tgrigera.github.io/docencia/teoriaestadisticadecampos/</loc>
+  </url><url>
     <loc>https://tgrigera.github.io/home/</loc>
     <priority>0</priority>
     <xhtml:link
@@ -119,9 +97,7 @@
                 hreflang="es"
                 href="https://tgrigera.github.io/home/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/authors/</loc>
     <xhtml:link
                 rel="alternate"
@@ -133,9 +109,7 @@
                 hreflang="es"
                 href="https://tgrigera.github.io/authors/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://tgrigera.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -148,5 +122,4 @@
                 href="https://tgrigera.github.io/categories/"
                 />
   </url>
-  
 </urlset>
