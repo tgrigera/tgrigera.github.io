@@ -1,0 +1,27 @@
+en:
+  - title: "Home"
+    url: /en/
+  - title: "Research"
+    url: /en/research/
+  - title: "Teaching"
+    url: /en/docencia/
+  - title: "Publications"
+    url: /en/publications/
+  - title: "CV"
+    url: /en/cv/
+  - title: "Blog"
+    url: /en/blog/
+
+es:
+  - title: "Inicio"
+    url: /es/
+  - title: "Investigación"
+    url: /es/research/
+  - title: "Docencia"
+    url: /es/docencia/
+  - title: "Publicaciones"
+    url: /es/publications/
+  - title: "CV"
+    url: /es/cv/
+  - title: "Blog"
+    url: /es/blog/

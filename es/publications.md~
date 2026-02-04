@@ -1,0 +1,10 @@
+---
+layout: page
+title: Publicaciones
+lang: en
+---
+
+# Publication list
+
+{% include publications.html %}
+

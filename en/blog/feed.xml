@@ -1,0 +1,6 @@
+---
+layout: null
+permalink: /en/blog/feed.xml
+lang: en
+---
+{% feed_meta %}

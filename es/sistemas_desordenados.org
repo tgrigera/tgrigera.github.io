@@ -1,0 +1,20 @@
+#+title:  Introducción a la física de los sistemas desordenados
+#+type: page
+#+draft: true
+#+date: 2012-09-15 
+
+
+Es un curso de posgrado válido para el doctorado de la Facultad de
+Ciencias Exactas.  De 45 horas de duración, otorga *3 créditos.*
+
+** Edición 2014
+
+*** Lugar y horarios
+
+El curso de dictará en el Aula Chica del INIFTA, de 10 a 12 y de 14 a
+16 entre los dias 30 de junio y 11 de julio.
+
+*** [[file:./prog_sd.pdf][Programa y bibliografía]]
+
+*** [[file:./2014_sistemas_desordenados][Material del curso]]
+

@@ -1,0 +1,43 @@
+#+title: Computación
+#+type: page
+#+date:  2015-08-03
+
+Computación es una asignatura obligatoria de la Lic. en Física Médica
+y optativa de la Lic. en Física.  Se trata de un curso básico de
+introducción a la programación y arquitectura de computadoras y
+rudimentos de cálculo numérico.
+
+* [[file:programa2016.pdf][Programa]]
+
+
+* Curso 2016
+
+** Horarios y aulas
+
+   * Teorías : miércoles de 14 a 17 (aula chica)
+   * Prácticas : jueves de 10 a 13 y viernes de 11:30 a 13 (aula
+     experimentos)
+
+** Prácticas
+   :PROPERTIES:
+   :ID:       6c846b31-de12-453d-983d-93ad005a2d2f
+   :END:
+
+ - [[file:2016_practica1.pdf][Práctica 1]] --- Octave/Matlab I
+ - [[file:2016_practica2.pdf][Práctica 2]] --- Octave/Matlab II
+   + [[file:DatosPractica2.dat][DatosPractica2.dat]] --- Datos para el problema 5
+ - [[file:2015_practica3.pdf][Práctica 3]] --- Representación digital de la información I
+ - [[file:2015_practica4.pdf][Práctica 4]] --- Representación digital de la información II
+   + [[file:texto-utf8.txt][texto-utf8.txt]] --- Datos para problema 3
+   + [[file:Lenna.png][Lenna.png]] --- Imagen para el problema 4
+ - [[file:2015_practica5.pdf][Práctica 5]] --- Arquitectura y organización de computadoras I
+ - [[file:2015_practica6.pdf][Práctica 6]] --- Arquitectura y organización de computadoras II
+ - [[file:2015_practica7.pdf][Práctica 7]] --- Lenguaje C I
+   + [[file:DatosPrac07Prob04][DatosPrac07prob04.txt]] --- Datos para problema 4
+ - [[file:2015_practica8.pdf][Práctica 8]] --- Lenguaje C II
+ - [[file:2015_practica9.pdf][Práctica 9]] --- Métodos numéricos
+ - [[file:2015_practica10.pdf][Práctica 10]]--- Simulaciones numéricas
+
+
+# ** [[file:material/index.org][Material]] adicional (sólo para inscriptos)
+

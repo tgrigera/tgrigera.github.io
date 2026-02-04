@@ -1,0 +1,10 @@
+<div class="language-switcher">
+  {% assign current = page.url %}
+  {% if page.lang == "en" %}
+    {% assign alt = current | replace_first: "/en/", "/es/" %}
+    <a href="{{ alt | relative_url }}">ES</a>
+  {% else %}
+    {% assign alt = current | replace_first: "/es/", "/en/" %}
+    <a href="{{ alt | relative_url }}">EN</a>
+  {% endif %}
+</div>

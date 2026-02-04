@@ -1,0 +1,30 @@
+---
+layout: academic
+title:  Mecánica Estadística II
+permalink: /es/docencia/mecanicaestadisticaii/
+lang: es
+---
+
+#+type: page
+#+date:  2019-07-30
+
+Mecánica Estadística II es una asignatura optativa de la Lic. en
+Física.
+
+
+* [[file:programa.pdf][Programa]]
+
+
+* Horarios y aulas 2020
+
+  * Teorías : martes y jueves de 15 a 17, virtual (via meet)
+  * Prácticas : martes y viernes de 10 a 12, virtual (via meet)
+
+** Prácticas
+
+ - [[file:practica1.pdf][Práctica 1]] --- Transiciones de fase y energía libre
+ - [[file:practica2.pdf][Práctica 2]] --- Modelos ferromagnéticos en el retículo
+ - [[file:practica3.pdf][Práctica 3]] --- Teorías de campos en física estadística
+ - [[file:practica4.pdf][Práctica 4]] --- Dinámica de equilibrio
+ - [[file:practica5.pdf][Práctica 5]] --- Grupo de renormalización
+ - [[file:practica6.pdf][Práctica 6]] --- Excitaciones en sólidos: fonones y magnones

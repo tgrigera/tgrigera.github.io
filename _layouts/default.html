@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papet4..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+  <aside class="sidebar">
+
+    <div class="site-branding">
+      <a href="{{ '/' | relative_url }}">
+	<div class="site-title">{{ site.title }}</div>
+      </a>
+    </div>
+
+    {% include language-switcher.html %}
+
+    <nav class="site-nav">
+      {% assign nav = site.data.navigation[page.lang] %}
+      {% for item in nav %}
+      {% assign current = page.url %}
+      <a href="{{ item.url | relative_url }}"
+	 class="{% if current == item.url or item.url != '/en/' and item.url != '/es/' and current contains item.url %}active{% endif %}">
+	{{ item.title }}
+      </a>
+      {% endfor %}
+    </nav>
+    <div class="sidebar-contact">
+      <!-- <h2>Contact</h2> -->
+      <ul>
+	<li>
+	  <a href="mailto:tgrigera@iflysib.unlp.edu.ar" title="Email">
+            <i class="fas fa-envelope"></i>
+	  </a>
+	</li>
+	<li>
+	  <a href="https://scholar.google.com/citations?user=k1VIM6cAAAAJ" target="_blank" title="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+	  </a>
+	</li>
+	<li>
+	  <a href="https://orcid.org/0000-0002-3165-4838" target="_blank" title="ORCID">
+            <i class="fab fa-orcid"></i>
+	  </a>
+	</li>
+	<li>
+	  <a href="https://github.com/tgrigera" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+	  </a>
+	</li>
+      </ul>
+    </div>
+
+  </aside>
+
+  <main class="content">
+    {{ content }}
+  </main>
+
+</div>
+
+<!-- MathJax (unchanged) -->
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+
+</body>
+</html>

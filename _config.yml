@@ -1,0 +1,53 @@
+title: T. S. Grigera
+description: Academic website and research blog
+url: "https://tgrigera.github.io"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+collections:
+  posts:
+    output: true
+
+# Multilingual settings
+languages: [en, es]
+default_lang: en
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+  - scope:
+      path: "en"
+    values:
+      lang: en
+
+  - scope:
+      path: "es"
+    values:
+      lang: es
+
+  - scope:
+      path: "en/blog"
+      type: posts
+    values:
+      layout: post
+      comments: true
+
+  - scope:
+      path: "es/blog"
+      type: posts
+    values:
+      layout: post
+      comments: true

@@ -1,0 +1,12 @@
+---
+layout: academic
+title: About
+permalink: /en/about/
+lang: en
+---
+
+I am a physicist working on critical phenomena and theoretical modeling.
+
+$$
+\Sigma(p) = \frac{\lambda}{2} \int \frac{d^d k}{(2\pi)^d} \frac{1}{k^2 + m^2}.
+$$

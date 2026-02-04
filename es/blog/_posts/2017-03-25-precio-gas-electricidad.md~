@@ -1,0 +1,93 @@
+#+title: Precio de la energía domiciliaria en La Plata, Argentina
+#+date: 2017-03-25
+#+tags: Energía
+
+¿Cuánto pagamos por la energía entregada en nuestros domicilios a
+través de las redes de electricidad y gas natural?  Muchas veces he
+escuchado y leído que "el gas es más barato que la electricidad"
+(naturalmente esa afirmación se refiere al equivalente de energía que
+puede obtenerse mediante las dos formas, y obviando otra serie de
+ventajas y desventajas comparativas que tienen que ver con el tipo de
+uso que se le puede dar a ambas y con el costo y los inconvenientes
+que puede tener la instalación necesaria).
+
+Hoy me decidí a responder a esa pregunta con números concretos.
+Partiendo de los importes facturados por Camuzzi Gas Pampeana y EDELAP
+entre mayo y diciembre de 2016 (después de los incrementos tarifarios
+dispuestos en 2016) calculé el precio de la energía suministrada.
+
+Antes de compartir el resultado, se imponen algunos comentarios:
+
+ - Los precios de la energía dependen del área geográfica, del tipo
+   de usuario y de la cantidad consumida.  El resultado que doy se
+   aplica a la ciudad de La Plata y a un consumo residencial.
+ - La distribuidora de gas mide el volumen de gas entregado, mientras
+   que la de electricidad mide la energía entregada en ~kWh~
+   (kilowatt-hora).  Para poder comparar los precios hay que obtener
+   la energía entregada en las mismas unidades; yo elegí el ~MJ~ (mega
+   Joule).  Un ~kWh~ equivale a 3.6 MJ, mientras que un $m^3$ de gas
+   equivale (según lo informado por la propia distribuidora en la
+   factura) a 9300 kcal (kilocalorias), o 38.9 MJ.
+ - El valor facturado por las distribuidoras está compuesto por un
+   precio asignado a la energía entregada (que suele depender del
+   volumen consumido), de cargos fijos por distribución (de modo que
+   hay un mínimo de facturación sólo por mantener el suministro) y de
+   impuestos nacionales y provinciales.  El precio que doy aquí es un
+   precio promedio que surge de considerar el precio final de la
+   factura.
+ - Debido a que el precio depende del consumo y a que el consumo
+   depende de la época del año (calefacción), y posiblemente a otros
+   factores, se observa variabilidad en el precio de la unidad de
+   energía a lo largo del año.  La comparación que sigue está basada
+   en el precio promediado a lo largo de todo el período.
+
+** Los precios
+
+En resumen el precio promedio del MJ es
+
+ |               |   | Costo de la energía eléctrica |   | Costo de la energía por gas |
+ | Precio del MJ |   | $0.258                        |   | $0.055                      |
+
+Es decir que la energía eléctrica domiciliaria es casi cinco veces más
+cara que la que puede obtenerse por combustión de gas domiciliario.
+Estos valores corresponden a tarifas residenciales de la ciudad de La
+Plata, para consumos de gas de entre 85 y 500 m^3 (bimestrales), y
+eléctricos de alrededor de 220 kWh mensuales.
+
+
+** ¿Fuera la pava eléctrica?
+
+Mi primer impulso luego de obtener el resultado fue erradicar la pava
+eléctrica.  Pero el ahorro absoluto, en términos monetarios, de tal
+medida no es tanto.  Suponiendo que se utilice la pava eléctrica para
+hervir 5 litros de agua por día (para lo cual se necesitan, si se
+parte de agua a 25C, unos 314kJ por litro, o sea aproximadamente 573
+MJ por año), con los valores promedio calculados se gastarían
+aproximadamente $148 si se utiliza electricidad y $31.50 se se utiliza
+gas (suponiendo un uso perfectamente eficiente de la energía, lo que
+entre otras cosas implica apagar la hornalla en cuanto el agua alcanza
+el hervor, y evitar que la llama exceda la base de la pava).  Se
+trataría de un ahorro de poco menos de $120 anuales.  Nada
+impresionante.
+
+Evidentemente para observar ahorros monetariamente significativos debe
+tratarse de actividades que impliquen alto consumo de energía.  Las
+comparaciones son difíciles porque los artefactos eléctricos y a gas
+difieren sustancialmente en su diseño y no necesariamente hacen un uso
+igualmente eficiente de la energía que consumen.  Sin embargo, parece
+razonable que la frase "el gas es más barato" sea cierta para el caso
+de la calefacción.
+
+El agua caliente sanitaria y el horno son otras aplicaciones típicas
+del gas donde probablemente también resulte más barato, aunque haría
+falta un cálculo aproximado del valor absoluto del ahorro, cosa que no
+estoy en condiciones de hacer por el momento por carecer de datos
+sobre consumos y rendimientos. 
+
+Por último, sería interesante saber cuánto cambian los precios
+encontrados según la ubicación geográfica.  Quizás algún lector
+interesado con residencia en otro lugar del país se anime a realizar
+el mismo cálculo y compartir sus resultados.
+
+
+

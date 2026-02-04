@@ -1,0 +1,37 @@
+#+title: Material-computacion
+#+date:  2015-08-12
+#+hidetitle: True
+
+* Material
+
+** Transparencias utilizadas en clase
+
+ - [[file:octave.pdf][Octave / Matlab]]
+ - [[file:arquitectura.pdf][Arquitectura y organización]]
+ - [[file:C.pdf][Lenguaje C]]
+
+
+** Software
+
+ - [[file:../rep.c][rep.c]] --- Imprimir representación binaria de distintos formatos numéricos
+
+
+** Bibliografía
+
+ - Borrel i Nogueras (2008) --- [[file:%5BBorrel%20i%20Nogueras%5D%20Introducci%C3%B3n%20a%20Matlab%20y%20Octave.pdf][Introducción a Matlab y Octave]]
+ - [enlace externo] Eaton, Bateman, Hauberg y Wehbring (2008) --- [[https://www.gnu.org/software/octave/octave.pdf][Manual de Octave]]
+ - González, Woods y Eddins (2009) --- [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/%5BGonzalez,%20Woods,%20Eddins%5D%20Digital%20image%20processing%20using%20MATLAB.pdf][Digital image processing using Matlab]]
+ - Kerninghan y Ritchie (1991) --- El lenguaje de programación C
+ - Li y Drew (2004) --- [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/Fundamentals-of-Multimedia%20(leer%20con%20xpdf!).pdf][Fundamentals of multimedia]]
+ - Null y Lobur (2003) --- [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/%5BLinda_Null,_Julia_Lobur%5D_The_Essentials_Of_Comput(BookFi.org).pdf][Essentials of computer organization and architecture]]
+ - Press et al. (1992) --- [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/NumericalRecipesinC.pdf][Numerical Recipes in C]]
+ - Sciutto (2010) --- [[file:%5BSciutto%5DRepresentacionesNumericas.pdf][Apunte]] sobre representaciones numéricas
+ - Stallings (2003) --- [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/%5BWilliam_Stallings%5D_Computer_Organization_and_Arch(BookFi.org).pdf][Computer organization and architecture]]
+   + [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/%5BWilliam_Stallings%5D_Organizaci??n_y_Arquitectura_d(BookFi.org).pdf][traducción]] castellana
+ - Tanenbaum (2006) --- [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/%5BAndrew_S._Tanenbaum%5D_Structured_computer_organization.pdf][Structured computer organization]]
+   + [[http://iflysib14.iflysib.unlp.edu.ar/libros/Computacion/%5BAndrew_S._Tanenbaum%5D_Organizacion_de_Computadoras(BookFi.org).pdf][traducción]] castellana
+
+
+
+
+

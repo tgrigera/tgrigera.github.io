@@ -1,0 +1,12 @@
+---
+layout: academic
+title: Research
+permalink: /en/research/
+lang: en
+---
+
+My research focuses on field-theoretic approaches to phase transitions and computational methods.
+
+$$
+\Sigma(p) = \frac{\lambda}{2} \int \frac{d^d k}{(2\pi)^d} \frac{1}{k^2 + m^2}.
+$$
