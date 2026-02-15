@@ -8,6 +8,7 @@ layout: default
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a><br>
       <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
+      {% if post.excerpt!="auto" %}{{ post.excerpt }}{% else %}{{ post.content | truncatewords: 50 }}{% endif %}
     </li>
   {% endfor %}
 </ul>

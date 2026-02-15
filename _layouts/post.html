@@ -4,7 +4,11 @@ layout: default
 
 <article class="post">
   <h1>{{ page.title }}</h1>
-  <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
+  <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}  
+  <!-- {% for tag in page.tags %} -->
+  <!-- <a href="/tags/{{ tag | slugify }}/">#{{ tag }}</a>&nbsp;&nbsp; -->
+  <!-- {% endfor %} -->
+  </p>
 
   {{ content }}
 

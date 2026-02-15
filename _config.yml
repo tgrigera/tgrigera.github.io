@@ -43,6 +43,7 @@ defaults:
       type: posts
     values:
       layout: post
+      excerpt: "auto"
       comments: true
 
   - scope:
@@ -51,3 +52,4 @@ defaults:
     values:
       layout: post
       comments: true
+      excerpt: "auto"

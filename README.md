@@ -26,7 +26,15 @@ Files in non-underscore directories are copied verbatim unless they start with _
 
 ### Layouts
 
-Layouts are .html (with liquid) files that wrap around normal files, and they are used to get uniform formatting of pages and avoid repetition.  Setting `layout` in the front matter selects the layout to be used. 
+Layouts are .html (with liquid) files that wrap around normal files, and they are used to get uniform formatting of pages and avoid repetition.  Setting `layout` in the front matter selects the layout to be used.
+
+### Pages and posts
+
+Pages are static pages, posts are meant to be blog posts.  Front matter is used to set the `layout`, `title` and `lang`uage.  One can also use `permalink` to force a destination file different from the default.  Posts typically ad `date`, `tag` (or `tags` fro multiple tags), `category` (or `categories`) and `comments: true` to enable commments.  To link to other pages of the site you don't include verbatim links but call them through `Liquid` using `{% link xx %}` or `{% post_url xx %}` (see the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#link)).
+
+Some defaults for the front matter are defined in `_config.yml` (they can be defined so that they apply only to files in certain directories).  I added defined `excerpt: "auto"` and modified the `blog.html` layout so that it displays the first 50 words in the blog index as default excerpt if `excerpt==auto`, or else the content of the `excerpt` variable if it was redefined in the front matter.
+
+Posts have categories and tags, which can be used to collect related posts.  At this point, tags are not fully functional.  I know how to make tags appear in a post, and link to a page collecting the tags, but the collecting page is not generated.  Apparently I need to define a Jekyll collection (the explanation in [this blog post](https://nathan.gs/2024/01/03/tags-in-jekyll/) looks pretty reasonable, I should implement it).
 
  
 ## Giscus Setup (one-time)

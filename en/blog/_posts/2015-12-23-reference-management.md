@@ -4,7 +4,6 @@ title: "Reference management with Emacs, BibTeX, and Zotero"
 date: 2015-12-03
 lang: en
 tags: [Emacs, BibTex, Zotero]
-permalink: /en/blog/computers/2015-12-03/
 categories: [computers]
 comments: true
 ---
