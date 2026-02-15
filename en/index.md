@@ -24,7 +24,7 @@ jointly dependent from [CONICET](http://www.conicet.gov.ar)
 Plata](http://www.unlp.edu.ar), and staffed mainly by physicists.  I
 am also full professor at the [Department of
 physics](http://www.fisica.unlp.edu.ar) of the same University (about
-2km from IFLySiB), where I teach various undergraduate and graduate
+2km from IFLySiB), where I [teach]({% link en/docencia.md %}) various undergraduate and graduate
 courses.
 
 My research interests include collective motion of biological groups, biological criticality, statistical field theory and renormalization, neuronal networks, and scientific computing in [Julia](http://julialang.org/).

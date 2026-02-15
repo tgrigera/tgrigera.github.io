@@ -17,7 +17,7 @@ lang: es
   </div>
 </div>
 
-Soy Investigador Principal en el grupo de Biofísica Estadistica (BiEs) del Instituto de Física de Líquidos y Sistemas Biológicos, [IFLySiB](http://www.iflysib.unlp.edu.ar), una unidad ejecutora dependiente conjuntamente del [CONICET](http://www.conicet.gov.ar) y la [Universidad Nacional de La Plata](http://www.unlp.edu.ar) e integrada mayormente por físicos de formación.  También soy Profesor Titular en el [Departmento de Física](http://www.fisica.unlp.edu.ar) de esa Universidad, donde dicto varios cursos de grado y posgrado.
+Soy Investigador Principal en el grupo de Biofísica Estadistica (BiEs) del Instituto de Física de Líquidos y Sistemas Biológicos, [IFLySiB](http://www.iflysib.unlp.edu.ar), una unidad ejecutora dependiente conjuntamente del [CONICET](http://www.conicet.gov.ar) y la [Universidad Nacional de La Plata](http://www.unlp.edu.ar) e integrada mayormente por físicos de formación.  También soy Profesor Titular en el [Departmento de Física](http://www.fisica.unlp.edu.ar) de esa Universidad, donde dicto varios [cursos]({% link es/docencia.md %}) de grado y posgrado.
 
 Mis intereses de investigación incluyen el movimiento colectivo de grupos biológicos, criticalidad en biología, teoría estadístiica de campos y renormalización, redes de neuronas y computación científica en [Julia](http://julialang.org/).
 

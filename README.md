@@ -4,7 +4,7 @@ This constitutes the source material and configuration to generate my website us
 
 ## Directory structure
 
-Directories and files with names starting with and underscore contain files with instructions on how to build the site (general configuration, page styles, .html bits), but will not be present in the rendered site.  The other ones give rise to a directory with the same name in the final site, with some files copied verbatim and `.md` and `.html` files processed [if they start with header, check].
+Directories and files with names starting with an underscore contain files with instructions on how to build the site (general configuration, page styles, .html bits), but will not be present in the rendered site.  The other ones give rise to a directory with the same name in the final site, with some files copied verbatim and `.md` and `.html` files processed by Jekyll  they start with an appropriate header (called "front matter").
 
  - `_config.yml` : basic configuration and some defaults.
  - `_layouts/` : "Blueprints" for the pages (html with liquid).
@@ -30,7 +30,7 @@ Layouts are .html (with liquid) files that wrap around normal files, and they ar
 
 ### Pages and posts
 
-Pages are static pages, posts are meant to be blog posts.  Front matter is used to set the `layout`, `title` and `lang`uage.  One can also use `permalink` to force a destination file different from the default.  Posts typically ad `date`, `tag` (or `tags` fro multiple tags), `category` (or `categories`) and `comments: true` to enable commments.  To link to other pages of the site you don't include verbatim links but call them through `Liquid` using `{% link xx %}` or `{% post_url xx %}` (see the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#link)).
+Pages are static pages, posts are meant to be blog posts.  Front matter is used to set the `layout`, `title` and `lang`uage.  One can also use `permalink` to force a destination file different from the default.  Posts typically add `date`, `tag` (or `tags` fro multiple tags), `category` (or `categories`) and `comments: true` to enable commments.  To link to other pages of the site you don't include verbatim links but call them through `Liquid` using `{% link xx %}` or `{% post_url xx %}` (see the [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#link)).
 
 Some defaults for the front matter are defined in `_config.yml` (they can be defined so that they apply only to files in certain directories).  I added defined `excerpt: "auto"` and modified the `blog.html` layout so that it displays the first 50 words in the blog index as default excerpt if `excerpt==auto`, or else the content of the `excerpt` variable if it was redefined in the front matter.
 

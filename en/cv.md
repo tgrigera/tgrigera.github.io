@@ -5,12 +5,13 @@ permalink: /en/cv/
 lang: en
 ---
 
-I graduated in physics at La Plata and obtained my PhD here in 1998.
-Before joining IFLYSIB in late 2014, I worked at
-[INIFTA](http://www.inifta.unlp.edu.ar) as a CONICET researcher from
-late 2003, and before that I was a postdoc in the Department of
-Physics of Northeastern University, Boston (1998--1999) and in the
-Department of Physics of the University of Rome _La Sapienza_
-(2000--2003).
+I graduated in physics at La Plata and obtained my PhD here in 1998, working on polymer physics.  In 1998 I moved to the Department of Physics of Northeastern University (Boston, U.S.A.) as a posdoc and I switched to studying glasses and disordered systems.  At Northeastern I worked with Prof. N. Israeloff developing an experiment that provided the first determination of the effective temperature defined by fluctuation-dissipation-theorem violations in a structural glass (glycerine).  In early 2000 I started a second posdoc in Rome (Italy), at the _Dipartimento di Fisica_ of _Sapienza_ University, with Prof. Giorgio Parisi.  There I continued with my interest in disordered systems, but now doing theory and numerical simulation.  During this period I proposed the swap Monte Carlo algorithm, which proved very effective in accelerating the equilibration of certain binary mixtures and polydisperse glass-formers.  I also worked on the geometrical transition in the energy landscape (from saddle-dominated to minima-dominated regions) through numerical simulation and using random matrix theory.
 
-You may download my CV as a PDF here.
+In late 2003 I accepted an appointment as career researcher from [CONICET](https://www.conicet.gov.ar) and returned to La Plata to work at the 
+Instituto de Investigaciones Fisicoquímicas Teóricas y Aplicadas ([INIFTA](http://www.inifta.unlp.edu.ar)). There I continued to work on glasses and supercooled liquids, keeping in touch and collaborating with colleagues in Roma, Trento and Paris.  The main result from this period was the first numerical determination of a growing correlation length in a supercooled liquid, using the idea of point-to-set correlations.
+
+Around the time I moved to move to my current institution ([IFLySiB](http://www.iflysib.unlp.edu.ar), in late 2014) I started working on problems in biological physics and gradually abandonded glasses.  Currently I study collective properties of biological systems using techniques from statistical physics.  In this period I have worked (and continue to work) on collective motion of biological groups (flocks, swarms, or cells in a tissue or culture),  dynamics of neuronal networks, and growth of cell colonies.  From this period it is worth mentioning the work on the critical behaviour of midge swarms (at the static and dynamic levels).  To describe this behaviour it proved necessary to formulate a new model, the Inertial Spin Model (ISM), which adds an inertial component to the dynamics of the Vicsek model.  Studying the ISM with field-theoretic and renormalization group techniques, we were able to account for the dynamic critical exponent measured in experiments on midge swarms in the field, which is smaller than that of other known dynamical models.
+
+All this work was carried out in collaboration with students and colleagues at different institutions in Argentina and abroad.  Currently, the strongest collaborations are, apart from the people of the [BiEs](https://web.iflysib.unlp.edu.ar/grupos/areas-de-investigacion/) group at IFLySiB) with [Andrea Cavagna](https://www.isc.cnr.it/staff-members/andrea-cavagna/) at the Institute for Complex Systems in Rome, [Dante Chialvo](http://www.chialvo.net/Home.html) at the University of San Martín, [Pedro Lowenstein](https://medschool.umich.edu/profile/4768/pedro-lowenstein) of the University of Michigan and [Griselda Moreno](https://scholar.google.com.ar/citations?user=ss_XGs8AAAAJ&hl=es) of the University of La Plata.
+
+A PDF version of my CV is available for [download]({% link assets/documents/cven.pdf %}).
