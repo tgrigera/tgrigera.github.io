@@ -1,0 +1,111 @@
+.sidebar {
+  padding: 2.5rem 1.5rem;
+  border-right: 1px solid var(--border);
+  background: #fafafa;
+  box-sizing: border-box;
+}
+
+.site-title {
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav a {
+  display: block;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--ink);
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+.site-branding::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 28px;
+  background: var(--accent);
+  margin-right: 0.7rem;
+}
+
+.site-logo {
+  height: 36px;
+  width: auto;
+}
+
+.site-title {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--ink);
+}
+
+.site-nav a.active {
+  color: var(--ink);
+  font-weight: 600;
+  position: relative;
+}
+
+.site-nav a.active::before {
+  content: "";
+  position: absolute;
+  left: -0.9rem;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  width: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.sidebar-contact {
+  margin-top: 2rem;
+}
+
+.sidebar-contact h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+}
+
+.sidebar-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.sidebar-contact a {
+  color: var(--muted);
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.sidebar-contact a:hover {
+  color: var(--accent);
+}
+
+.lang-switcher {
+  margin-bottom: 1.8rem;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+}

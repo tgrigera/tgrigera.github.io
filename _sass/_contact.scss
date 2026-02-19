@@ -1,0 +1,54 @@
+/* Contact block */
+
+.contact-full {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.contact-full h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: var(--ink);
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contact-info i {
+  margin-right: 0.6rem;
+  color: var(--accent);
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-top: 0.8rem;
+}
+
+.contact-links a {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.95rem;
+  color: var(--ink);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact-links a:hover {
+  color: var(--accent);
+}
