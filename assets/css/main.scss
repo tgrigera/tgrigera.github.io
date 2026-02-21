@@ -67,25 +67,25 @@ body {
   max-width: 760px;
   padding: 3rem 3rem 4rem 3rem;
   box-sizing: border-box;
-}
 
-.content h1 {
-  font-size: 2.1rem;
-  margin-top: 0;
-}
+  h1 {
+      font-size: 2.1rem;
+      margin-top: 0;
+  }
 
-.content h2 {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-}
+  h2 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+  }
 
-.content h3 {
-  font-size: 1.2rem;
-  margin-top: 2rem;
-}
+  h3 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+  }
 
-.content p {
-  margin: 1rem 0;
+  p {
+      margin: 1rem 0;
+  }
 }
 
 .emptysidebar {
@@ -99,6 +99,19 @@ footer.site-footer {
 @import "contact";
 
 /* Academic metadata */
+
+.post {
+  flex: 1;
+  width: 950px;
+  padding-top: 5rem;
+  padding-left: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+  font-family: $sans-serif; //"Source Sans 3", system-ui, sans-serif;
+  //font-size: 0.95rem;
+  // color: var(--muted);
+  // margin-bottom: 1.5rem;
+}
 
 .post-meta {
   font-family: "Source Sans 3", system-ui, sans-serif;

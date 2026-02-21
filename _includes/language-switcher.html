@@ -2,9 +2,9 @@
   {% assign current = page.url %}
   {% if page.lang == "en" %}
     {% assign alt = current | replace_first: "/en/", "/es/" %}
-    <a href="{{ alt | relative_url }}">ES</a>
+    <a href="{{ alt | relative_url }}">Castellano</a>
   {% else %}
     {% assign alt = current | replace_first: "/es/", "/en/" %}
-    <a href="{{ alt | relative_url }}">EN</a>
+    <a href="{{ alt | relative_url }}">English</a>
   {% endif %}
 </div>

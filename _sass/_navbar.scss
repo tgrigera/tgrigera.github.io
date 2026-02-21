@@ -37,9 +37,7 @@
   text-decoration: none;
 }
 
-
 .horizontal-navbar {
-
     background: var(--side-background);
     margin-left:0;
     padding-left:0;
@@ -73,15 +71,32 @@
     }
 
     ul li a.active {
-       // color: var(--global-text-color);
-       color: var(--ink);
+       color: var(--global-text-color);
        font-weight: 700;
        border-bottom: 2px solid var(--global-text-color);
-       pointer-events: none; /* Move this here */
-       cursor: default; /* Move this here too */
+       pointer-events: none;
+       cursor: default; 
 
        &:hover {
 	    color: #fff;
 	}
     }
 }    
+
+.language-switcher {
+//    background: var(--side-background);
+    margin-left: 0;
+    padding-left: 10rem;
+    float: left;
+    a {
+	background-color: var(--global-masthead-link-color);
+	display: block;
+	text-align: center;
+	font-family: "Source Sans 3", system-ui, sans-serif;
+	font-size: 1.05rem;
+	color: var(--global-bg-color);
+	margin-bottom: 0.6rem;
+	padding: 10px 16px;
+	text-decoration: none;
+    }
+}

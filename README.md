@@ -1,20 +1,21 @@
 # Source for GitHub pages personal site
 
-This constitutes the source material and configuration to generate my website using [Jekyll](https://jekyllrb.com/).  This produces a bilingual site with static content plus a blog (two actually, one for each language).  Blog posts allow comments through [giscus](https://giscus.app), and the bibliography page is built from `BibTex` source through a `Python` script.  This is the only script that has to be run locally before committing to GitHub (because it is not default Jekyll and I wanted to stick to standard Jekyll and gems supported by GitHub without having to set up special build environments).
+This constitutes the source material and configuration to generate my website using [Jekyll](https://jekyllrb.com/).  This produces a bilingual site with static content plus a blog (two actually, one for each language).  Blog posts allow comments through [giscus](https://giscus.app), and the bibliography page is built from `BibTex` source through a `Julia` script.  This is the only script that has to be run locally before committing to GitHub (because it is not default Jekyll and I wanted to stick to standard Jekyll and gems supported by GitHub without having to set up special build environments).
 
 ## Directory structure
 
-Directories and files with names starting with an underscore contain files with instructions on how to build the site (general configuration, page styles, .html bits), but will not be present in the rendered site.  The other ones give rise to a directory with the same name in the final site, with some files copied verbatim and `.md` and `.html` files processed by Jekyll  they start with an appropriate header (called "front matter").
+Directories and files with names starting with an underscore contain files with instructions on how to build the site (general configuration, page styles, .html bits), but will not be present in the rendered site.  The other ones give rise to a directory with the same name in the final site, with some files copied verbatim and `.md` and `.html` files processed by Jekyll if they start with an appropriate header (called "front matter").
 
+ - `README.md`: This document.
+ - `Gemfile` and `Gemfile.lock`: Ruby gems needed to generate the site.
+ - `index.md`: The landing page; this one merely redirects to the English index page.
  - `_config.yml` : basic configuration and some defaults.
  - `_layouts/` : "Blueprints" for the pages (html with liquid).
  - `_data/` : YAML files with variable definitions, currently the navigation data.
  - `_includes/` : HTML files included by the layouts (header, footer, language switcher, giscus)
  - `_sass`: sass fragments imported from `assets/css/main.scss`.
  - `_scripts/`: script to generate bibliography from BibTex
- - `Gemfile` and `Gemfile.lock`: Ruby gems needed to generate the site.
  - `assets/`:  Images, bib files, PDFs, CSS.  Mostly copied verbatim (except for .scss files, which produce .css)
- - `index.md`: The landing page; this one merely redirects to the English index page.
  - `en/` Source for the directory of the same name in the rendered site.  Contains one Markdown file for each of the main navigation entries (linked from the navigation bar): index, research, publications, cv, docencia.  These are processed by Jekyll to produce HTML pages.
  - `en/blog/`: Source for the blog index, tags, and XML feed.
  - `en/blog/_posts/`: Source for posts (one file per post, Markdown).
