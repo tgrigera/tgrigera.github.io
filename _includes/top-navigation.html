@@ -6,9 +6,8 @@
     <nav class="horizontal-navbar">
       <ul>
 	{% assign nav = site.data.navigation[page.lang] %}
+	{% assign current = page.url %}
 	{% for item in nav %}
-        <!-- <li> <a href="{{ item.url | relative_url }}" -->
-	<!--  class="{% if current == item.url or item.url != '/en/' and item.url != '/es/' and current contains item.url %}active{% endif %}"></a></li> -->
 	<li><a href="{{ item.url | relative_url }}"
 	       class="{% if current == item.url or item.url != '/en/' and item.url != '/es/' and current contains item.url %}active{% endif %}">
 	    {{ item.title }}</a></li>

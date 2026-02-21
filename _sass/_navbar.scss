@@ -73,20 +73,15 @@
     }
 
     ul li a.active {
-	color: var(--ink);
-	font-weight: 600;
-	position: relative;
-    }
+       // color: var(--global-text-color);
+       color: var(--ink);
+       font-weight: 700;
+       border-bottom: 2px solid var(--global-text-color);
+       pointer-events: none; /* Move this here */
+       cursor: default; /* Move this here too */
 
-    ul li a.active::before {
-	content: "";
-	position: absolute;
-	left: -0.9rem;
-	top: 0.2rem;
-	bottom: 0.2rem;
-	width: 3px;
-	background: var(--accent);
-	border-radius: 2px;
+       &:hover {
+	    color: #fff;
+	}
     }
-
 }    

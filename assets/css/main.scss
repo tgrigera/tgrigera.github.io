@@ -4,15 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600&display=swap');
 
-:root {
-  --ink: #1a1a1a;
-  --muted: #666;
-  --accent: #2c5aa0;
-  --bg: #ffffff;
-  --border: #e0e0e0;
-
-  --side-background: #fafafa;
-}
+@import "color";
 
 $navigation-height: 40pt;
 // Use only rem units to allow addition

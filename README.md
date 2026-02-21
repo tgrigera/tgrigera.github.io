@@ -10,6 +10,7 @@ Directories and files with names starting with an underscore contain files with 
  - `_layouts/` : "Blueprints" for the pages (html with liquid).
  - `_data/` : YAML files with variable definitions, currently the navigation data.
  - `_includes/` : HTML files included by the layouts (header, footer, language switcher, giscus)
+ - `_sass`: sass fragments imported from `assets/css/main.scss`.
  - `_scripts/`: script to generate bibliography from BibTex
  - `Gemfile` and `Gemfile.lock`: Ruby gems needed to generate the site.
  - `assets/`:  Images, bib files, PDFs, CSS.  Mostly copied verbatim (except for .scss files, which produce .css)
@@ -55,7 +56,7 @@ bundle exec jekyll serve
 and visit http://localhost:4000
 
 
-## 16. Deploy
+## Deploy
 
 ```bash
 git add .
