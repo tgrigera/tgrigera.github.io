@@ -5,5 +5,8 @@ permalink: /es/blog/
 lang: es
 ---
 
-Este índice corresponde sólo a las publicaciones en castellano.
+## Blog
+
+Este índice corresponde sólo a las publicaciones en castellano.  Hay también publicaciones en [inglés]({% link en/blog/index.md %}).
+
 

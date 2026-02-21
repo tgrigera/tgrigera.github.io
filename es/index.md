@@ -1,22 +1,13 @@
 ---
 layout: academic
-title: Tomas Grigera
+title: Tomás S. Grigera
 permalink: /es/
 lang: es
 ---
 
-<div class="home-intro">
-  <img src="{{ '/assets/img/tomas1 (copy).jpeg' | relative_url }}"
-       alt="Portrait of {{ site.title }}"
-       class="profile-photo">
+# Perfil
 
-  <div class="home-text">
-    <p><strong>{{ site.title }}</strong></p>
-    <p>Soy físico y trabajo en investigación en problemas de física biológica, movimiento colectivo y sistemas complejos.
-	</p>
-  </div>
-</div>
-
+![foto del autor](/assets/img/tomas1.jpeg){:.profile-photo}
 Soy Investigador Principal en el grupo de Biofísica Estadistica (BiEs) del Instituto de Física de Líquidos y Sistemas Biológicos, [IFLySiB](http://www.iflysib.unlp.edu.ar), una unidad ejecutora dependiente conjuntamente del [CONICET](http://www.conicet.gov.ar) y la [Universidad Nacional de La Plata](http://www.unlp.edu.ar) e integrada mayormente por físicos de formación.  También soy Profesor Titular en el [Departmento de Física](http://www.fisica.unlp.edu.ar) de esa Universidad, donde dicto varios [cursos]({% link es/docencia.md %}) de grado y posgrado.
 
 Mis intereses de investigación incluyen el movimiento colectivo de grupos biológicos, criticalidad en biología, teoría estadístiica de campos y renormalización, redes de neuronas y computación científica en [Julia](http://julialang.org/).

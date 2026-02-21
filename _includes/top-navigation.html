@@ -1,0 +1,20 @@
+<!-- <header class="site-header"> -->
+  <div class="horizontal-nav-container">
+    <div class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </div>
+    <nav class="horizontal-navbar">
+      <ul>
+	{% assign nav = site.data.navigation[page.lang] %}
+	{% for item in nav %}
+        <!-- <li> <a href="{{ item.url | relative_url }}" -->
+	<!--  class="{% if current == item.url or item.url != '/en/' and item.url != '/es/' and current contains item.url %}active{% endif %}"></a></li> -->
+	<li><a href="{{ item.url | relative_url }}"
+	       class="{% if current == item.url or item.url != '/en/' and item.url != '/es/' and current contains item.url %}active{% endif %}">
+	    {{ item.title }}</a></li>
+	{% endfor %}
+      </ul>
+    </nav>
+    {% include language-switcher.html %}
+  </div>
+<!-- </header> -->

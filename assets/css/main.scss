@@ -10,7 +10,21 @@
   --accent: #2c5aa0;
   --bg: #ffffff;
   --border: #e0e0e0;
+
+  --side-background: #fafafa;
 }
+
+$navigation-height: 40pt;
+// Use only rem units to allow addition
+$sidebar-width: 23rem;
+$sidebar-margin-left: 0rem;
+$sidebar-margin-right: 0rem;
+$sidebar-pad-left: 7rem;
+$sidebar-pad-right: 2rem;
+
+$sans-serif:  "Source Sans 3", sans-serif;
+$type-size-4: 0.9rem;
+$type-size-5: 0.8rem;
 
 html {
   font-size: 17px;
@@ -31,6 +45,8 @@ body {
 
 @import "sidebar";
 
+@import "navbar";
+
 .home-intro {
   display: flex;
   align-items: center;
@@ -42,9 +58,10 @@ body {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 50%; // circular photo, or
-  //border-radius: 6px;   /* subtle academic rectangle */
+  border-radius: 6px;   /* subtle academic rectangle */
   box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  float: right;
+  margin-left: 10pt;
 }
 
 .home-text p {
@@ -77,6 +94,10 @@ body {
 
 .content p {
   margin: 1rem 0;
+}
+
+.emptysidebar {
+    width: $sidebar-width+$sidebar-pad-left+$sidebar_pad-right+$sidebar-margin-left+$sidebar-margin-right;
 }
 
 footer.site-footer {

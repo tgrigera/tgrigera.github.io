@@ -3,6 +3,31 @@ description: Academic website and research blog
 url: "https://tgrigera.github.io"
 baseurl: ""
 
+# Some contact information (for sidebar)
+author:
+   name:      "Tomás S. Grigera"
+   avatar:    "tomas1-clip.jpeg"
+   location:  {name: "La Plata, Argentina",
+   	      maps: "https://www.google.com/maps/place/Instituto+De+F%C3%ADsica+De+L%C3%ADquidos+Y+Sistemas+Biol%C3%B3gicos+(IFLYSIB)/@-34.9234882,-57.9466911,20z/data=!4m12!1m5!3m4!2zMzTCsDU1JzI0LjIiUyA1N8KwNTYnNDcuOSJX!8m2!3d-34.9233889!4d-57.9466389!3m5!1s0x95a2e62690896399:0xfa137a9a4ab68505!8m2!3d-34.9233981!4d-57.94669!16s%2Fg%2F11gdq184xr?entry=ttu&g_ep=EgoyMDI2MDIxOC4wIKXMDSoASAFQAw%3D%3D"}
+   institutions:
+      - {name: "Universidad Nacional de La Plata", website: "http://www.unlp.edu.ar"}
+      - {name: "Departamento de Física, UNLP", website: "http://www.fisica.unlp.edu.ar"}
+      - {name: "CONICET", website: "http://www.conicet.gov.ar"}
+      - {name: "IFLySiB", website: "http://www.iflysib.unlp.edu.ar"}
+   email:         "tgrigera@iflysib.unlp.edu.ar"
+   orcid:         "https://orcid.org/0000-0002-3165-4838"
+   arxiv:         "https://arxiv.org/a/grigera_t_1.html"
+   github:        "tgrigera"
+   googlescholar: "https://scholar.google.com/citations?user=k1VIM6cAAAAJ"
+   bluesky:       "grigeratomas.bsky.social"
+   twitter:       "grigeratomas"
+
+minibio: {
+  es: "Físico investigador en física biológica, movimiento colectivo y sistemas complejos.",
+  en: "Physicist working on biological physics, collective motion, and complex systems."
+}
+        
+
 markdown: kramdown
 kramdown:
   input: GFM
