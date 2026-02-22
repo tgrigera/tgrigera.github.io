@@ -1,0 +1,41 @@
+/* Publications list */
+
+.publications {
+  margin-top: 2rem;
+}
+
+.pub-year {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ink);
+}
+
+.pub-list {
+  padding-left: 1.4rem;
+}
+
+.pub-item {
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+}
+
+.pub-links {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.pub-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.pub-links a:last-child {
+  font-weight: 600;
+}

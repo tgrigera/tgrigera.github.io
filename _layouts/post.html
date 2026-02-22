@@ -9,8 +9,10 @@ layout: academic-noside
   <!-- <a href="/tags/{{ tag | slugify }}/">#{{ tag }}</a>&nbsp;&nbsp; -->
   <!-- {% endfor %} -->
   </p>
+  {% include social-share.html %}
 
   {{ content }}
+
 
   {% if page.comments %}
     {% include giscus.html %}

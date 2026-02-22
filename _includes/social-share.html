@@ -1,0 +1,13 @@
+<div class="share-page">
+  {% if page.lang == "en"%}
+  Share on →
+  {% else %}
+  Compartir en →
+  {% endif %}
+  <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ page.url | absolute_url }}" target="_blank" rel="nofollow" title="Share on Twitter"><i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="nofollow" title="Share on Facebook"><i class="fab fa-fw fa-facebook icon-pad-right" aria-hidden="true"></i></a>
+  </a>
+  <a href="https://bsky.app/intent/compose?text={{ page.title | url_encode }}%0A%0A{{ page.url | url_encode }}" target="_blank" rel="noopener">
+  <i class="fab fa-fw fa-bluesky icon-pad-right" aria-hidden="true"></i></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="nofollow" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i></a>
+</div>
